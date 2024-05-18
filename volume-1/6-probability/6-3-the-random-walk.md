@@ -26,7 +26,7 @@ $$
 $$\langle{D_N^2}\rangle{} = \langle{D_{N - 1}^2}\rangle{} + 1$$
 
 因为 $D_1^2 = 1$ ，所以：
-$$<D_N^2> = N$$
+$$\langle{D_N^2}\rangle{} = N$$
 
 如果我们选择不用平方表示，可以使用均方的根：
 $$D_{rms} = \sqrt{<D^2>} = \sqrt{N} $$
