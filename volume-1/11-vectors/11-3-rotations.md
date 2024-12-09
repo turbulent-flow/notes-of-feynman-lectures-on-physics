@@ -25,3 +25,35 @@ $$F_{z^{'}}=F_z$$
 我们注意到一个意外，它非常重要，公式 [11.5](/volume-1/11-vectors/11-3-rotations.md#eq-11-5) 和 [11.6](/volume-1/11-vectors/11-3-rotations.md#eq-11-6)，对 P 的坐标和 F 的部分而言，它们的格式几乎完全一样。
 
 ![在两个系统中的一个作用力的部分](/assets/volume-1/fig-11-3.png)
+
+跟之前一样，牛顿定律在乔的系统中被认为是对的，参见表达式 [11.1](/volume-1/11-vectors/11-2-translations.md#eq-11-1)。再问一次，莫能应用牛顿定律吗——对于他的旋转轴的系统，结果仍是正确的吗？换句话说，如果我们假设等式 [11.5](/volume-1/11-vectors/11-3-rotations.md#eq-11-5) 和 [11.6](/volume-1/11-vectors/11-3-rotations.md#eq-11-6) 给出了度量的关系，下面是正确的还是错误的？
+
+##### eq-11-7
+
+ $$m(d^2x^{'}/dt^2)=F_{x^{'}}$$
+
+ $$m(d^2y^{'}/dt^2)=F_{y^{'}}$$
+
+ $$m(d^2z^{'}/dt^2)=F_{z^{'}}$$
+
+为了测试这些等式，我们可以单独地计算左边和右边，然后比较结果。让我们计算左边，我们把等式 [11.5](/volume-1/11-vectors/11-3-rotations.md#eq-11-5) 乘以 m ，再求导两次，相对于时间，然后比较结果。这就给出：
+
+#### eq-11-8
+
+$$m(d^2x^{'}/dt^2)=m(d^2x/dt^2)\cos{\theta}+m(d^2y/dt^2)\sin{\theta}$$
+
+$$m(d^2y^{'}/dt^2)=m(d^2y/dt^2)\cos{\theta}-m(d^2x/dt^2)\sin{\theta}$$
+
+$$m(d^2z^{'}/dt^2)=m(d^2z/dt^2)$$
+
+我们计算等式 [11.7](/volume-1/11-vectors/11-3-rotations.md#eq-11-7) 的右边，用等式 [11.1](/volume-1/11-vectors/11-2-translations.md#eq-11-1) 替换等式 [11.6](/volume-1/11-vectors/11-3-rotations.md#eq-11-6) 。这就给出：
+
+##### eq-11-9
+
+$$F_{x^{'}}=m(d^2x/dt^2)\cos{\theta}+m(d^2y/dt^2)\sin{\theta}$$
+
+$$F_{y^{'}}=m(d^2y/dt^2)\cos{\theta}-m(d^2x/dt^2)\sin{\theta}$$
+
+$$F_{z^{'}}=m(d^2z/dt^2)$$
+
+快看！等式 [11.8](/volume-1/11-vectors/11-3-rotations.md#eq-11-8) 和 [11.9](/volume-1/11-vectors/11-3-rotations.md#eq-11-9) 的右边相等，因此我们总结如果牛顿定律在一组坐标轴上是正确的，那么它们在任意的其它坐标轴上也是有效的。对于坐标轴的平移和旋转，有确定的结果：第一，没有人可以说他的坐标轴是唯一的，但是对于特定的问题，它们会更方便。比如让引力沿着某个轴，但这不是必要的。第二，任意一个设备（它是完全地自给自足的），伴随着在装置内部完整生成作用力的所有设备，当它旋转一个角度时会工作的一样。
