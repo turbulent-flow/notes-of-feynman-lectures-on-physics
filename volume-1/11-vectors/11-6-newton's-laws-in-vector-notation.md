@@ -36,11 +36,12 @@ $$a_{\parallel}=dv/dt$$
 
 加速度的另一个部分，垂直于曲线，很容易计算出来，运用 Fig.11-7 和 Fig.11-8 。在很短的时间 $\Delta{t}$ 中，把 $\boldsymbol{v}_1$ 和 $\boldsymbol{v}_2$ 之间的夹角的变化设为 $\Delta{\theta}$ 。如果速度的数值是 $v$ ，那么
 
-$$\Delta{v}_{\prep}=v\Delta{\theta}$$
+
+$$\Delta{v}_{\perp}=v\Delta{\theta}$$
 
 加速度 $a$ 是
 
-$$a_{\prep}=v(\Delta{\theta}/\Delta{t})$$
+$$a_{\perp}=v(\Delta{\theta}/\Delta{t})$$
 
 现在我们需要知道 $\Delta{\theta}/\Delta{t}$ ，可以通过这种方式求得：如果，在一个给定的时刻，曲线近似于一个圆，它的半径是 $R$ ，然后在一个时间 $\Delta{t}$ 中，距离 $s$ 是， $v\Delta{t}$ ，其中 $v$ 是速率。
 
@@ -48,6 +49,6 @@ $$\Delta{\theta}=(v\Delta{t})/R \quad or \quad \Delta{\theta}/\Delta{t}=v/R $$
 
 因此我们发现
 
-$$a_{\prep}=v^2/R$$
+$$a_{\perp}=v^2/R$$
 
-跟我们之前看到的一样。
+正如我们之前所看到的那样。
