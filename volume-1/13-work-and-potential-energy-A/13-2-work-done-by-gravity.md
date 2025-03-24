@@ -30,7 +30,7 @@ $$W_{12}=\int_1^2\boldsymbol{F}\cdot d\boldsymbol{s}=\int_1^2-GMm\frac{dr}{r^2}=
 
 $$W_{34}=\int_3^4\boldsymbol{F}\cdot d\boldsymbol{s}=GMm(\frac{1}{r_4}-\frac{1}{r_3})$$
 
-按照相同的方式，我们发现 $W_{45}=0$ ， $W_{56}=GMm(1/r_6-1/r_5)$ ，$W_{67}=0$ ， $W_{78}=GMm(1/r_8-1/r_7)$ 以及 $W_{81}=0$ 。因此
+按照相同的方式，我们发现 $W_{45}=0,\quad W_{56}=GMm(1/r_6-1/r_5),\quad W_{67}=0,\quad W_{78}=GMm(1/r_8-1/r_7)$ 以及 $W_{81}=0$ 。因此
 
 $$W=GMm(\frac{1}{r_2}-\frac{1}{r_1}+\frac{1}{r_4}-\frac{1}{r_3}+\frac{1}{r_6}-\frac{1}{r_5}+\frac{1}{r_8}-\frac{1}{r_7})$$
 
