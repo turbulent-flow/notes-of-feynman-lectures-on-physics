@@ -26,7 +26,7 @@ $$
 
 $$F_i=\sum_j-\frac{1}{r_{ij}^3}Gm_im_j\boldsymbol{r}_{ij}$$
 
-( $\mathbf{F}_i$ 应该是加粗的格式，这里无法渲染。)
+（ $\mathbf{F}_i$ 应该是加粗的格式，这里无法渲染。）
 
 势能的时间导数是
 
@@ -38,9 +38,18 @@ $$r_{ij}=\sqrt{(x_i-x_j)^2+(y_i-y_j)^2+(z_i-z_j)^2}$$
 
 所以
 
-$$\frac{dr_{ij}}{dt}=\frac{1}{2r_{ij}}[2(x_i-x_j)(\frac{dx_i}{dt}-\frac{dx_j}{dt})+2(y_i-y_j)(\frac{dy_i}{dt}-\frac{dy_j}{dt})+2(z_i-z_j)(\frac{dz_i}{dt}-\frac{dz_j}{dt})]=\boldsymbol{r}_{ij}\cdot \frac{\boldsymbol{v}_i-\boldsymbol{v}_j}{r_{ij}}=\boldsymbol{r}_{ij}\cdot \frac{\boldsymbol{v}_i}{r_{ij}}+\boldsymbol{r}_{ji}\cdot \frac{\boldsymbol{v}_j}{r_{ji}}$$
+$$
+\begin{aligned}
+\frac{dr_{ij}}{dt}
+&= \frac{1}{2r_{ij}}[2(x_i-x_j)(\frac{dx_i}{dt}-\frac{dx_j}{dt})+2(y_i-y_j)(\frac{dy_i}{dt}-\frac{dy_j}{dt})+2(z_i-z_j)(\frac{dz_i}{dt}-\frac{dz_j}{dt})] \\
+&= r_{ij}\cdot \frac{v_i-v_j}{r_{ij}} \\
+&= r_{ij}\cdot \frac{v_i}{r_{ij}}+r_{ji}\cdot \frac{v_j}{r_{ji}}
+\end{aligned}
+$$
 
-因为 $\boldsymbol{r}_{ij}=-\boldsymbol{r}_{ji}$ ，当 $r_{ij}=r_{ji}$ 。因此
+（ $r_{ij}, r_{ji}, v_i, v_j$ 应该是加粗的格式。）
+
+因为 $r_{ij}=-r_{ji}$ ，当 $r_{ij}=r_{ji}$ 。因此
 
 ##### eq-13-16
 
