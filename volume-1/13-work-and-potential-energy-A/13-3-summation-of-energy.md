@@ -14,7 +14,19 @@ $$\sum_{pairs}-\frac{Gm_im_j}{r_{ij}}$$
 
 ##### eq-13-15
 
-$$\frac{d}{dt}\sum_i\frac{1}{2}m_iv_i^2=\sum_im\frac{\boldsymbol{v}_i}{dt}\cdot \boldsymbol{v}_i=\sum_i\boldsymbol{F}_i\cdot \boldsymbol{v}_i=\sum_i(\sum_j-\frac{Gm_im_j\boldsymbol{r}_{ij}}{r_{ij}^3})\cdot \boldsymbol{v}_i$$
+$$
+\begin{aligned}
+\frac{d}{dt}\sum_i\frac{1}{2}m_iv_i^2
+&= \sum_im\frac{\boldsymbol{v}_i}{dt}\cdot \boldsymbol{v}_i \\
+&= \sum_i\boldsymbol{F}_i\cdot \boldsymbol{v}_i
+\end{aligned}
+$$
+
+代入
+
+$$F_i=\sum_j-\frac{1}{r_{ij}^3}Gm_im_j\boldsymbol{r}_{ij}$$
+
+( $\mathbf{F}_i$ 应该是加粗的格式，这里无法渲染。)
 
 势能的时间导数是
 
