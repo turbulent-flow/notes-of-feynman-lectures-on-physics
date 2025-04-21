@@ -16,4 +16,4 @@
 
 现在回到物理，我们或许会问为什么我们想要计算做的功。答案是它不仅有趣而且有用，因为在一个粒子上由作用在它上面的整体作用力所做的功完全等于粒子动能的变化。也就是，如果一个粒子被推动，它会提升速度，
 
-$$\Delta (\boldsymbol{v}^2)\frac{2}{m}\boldsymbol{F}\cdot d\boldsymbol{s}=$$
+$$\Delta (\boldsymbol{v}^2)=\frac{2}{m}\boldsymbol{F}\cdot d\boldsymbol{s}$$
