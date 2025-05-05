@@ -16,7 +16,7 @@ $$\boldsymbol{F}=q_1q_2\boldsymbol{r}/4\pi\epsilon_0r^3$$
 
 $$\boldsymbol{F}=q_1q_2\boldsymbol{r}/4\pi\epsilon_0r^3$$
 
-用场的概念去分析这个作用力，在 P 处的电荷 $q_1$ 在 R 处产生了一个“状态”，当电荷 $q_2$ 被放在 R 处，它“感受到了”作用力。这样说或许有些奇怪，在 R 处 $q_2$ 上的作用力可以被写成两个部分。 $q_2$ 乘以数值 $\boldsymbol{E}$ ，不管 $q_2$ 是否在那儿， $\boldsymbol{E}$ 总是在的（我们确保所有其它的粒子都在自己的位置上）。 $\boldsymbol{E}$ 是由 $q_1$ 产生的“状态”， $\boldsymbol{F}$ 是 $q_2$ 对 $\boldsymbol{E}$ 的响应。 $\boldsymbol{E}$ 被称之为电场，它是一个向量。在 R 处的电场的公式是电荷 $q_1$ 乘以常数 $1/4\pi\epsilon_0$ 除以 $r^2$ （r 是 P 到 R 的距离），它作用在半径向量的方向上（半径向量 r 除以它的自身长度）。 $\boldsymbol{E}$ 的表达式写作：
+用场的概念去分析这个作用力，在 P 处的电荷 $q_1$ 在 R 处产生了一个“状态”，当电荷 $q_2$ 被放在 R 处，它“感受到了”作用力。这样说或许有些奇怪，在 R 处 $q_2$ 上的作用力可以被写成两个部分。 $q_2$ 乘以数值 $\boldsymbol{E}$ ，不管 $q_2$ 是否在那儿， $\boldsymbol{E}$ 总是在的（我们确保所有其他的粒子都在自己的位置上）。 $\boldsymbol{E}$ 是由 $q_1$ 产生的“状态”， $\boldsymbol{F}$ 是 $q_2$ 对 $\boldsymbol{E}$ 的响应。 $\boldsymbol{E}$ 被称之为电场，它是一个向量。在 R 处的电场的公式是电荷 $q_1$ 乘以常数 $1/4\pi\epsilon_0$ 除以 $r^2$ （r 是 P 到 R 的距离），它作用在半径向量的方向上（半径向量 r 除以它的自身长度）。 $\boldsymbol{E}$ 的表达式写作：
 
 ##### eq-12-4
 
