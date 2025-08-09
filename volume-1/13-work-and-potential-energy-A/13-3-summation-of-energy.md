@@ -1,3 +1,9 @@
+---
+layout: default
+title: 13-3 Summation of Energy
+parent: 13. Work and Potential Energy a
+nav_order: 3
+---
 现在让我们看看更加通用的情况，当存在大量的物体时会发生什么。我们的问题很复杂，把它们标记为 i=1, 2, 3, ...，物体会在彼此之间施加引力的拉力。然后呢？我们需要证明如果我们把所有粒子的动能相加，再加上所有结对的粒子，它们相互之间的引力势能， $-GMm/r_{ij}$ ，结果是一个常数：
 
 ##### eq-13-14

@@ -1,3 +1,9 @@
+---
+layout: default
+title: 5-4 Long Time
+parent: 5. Time and Distance
+nav_order: 4
+---
 在自然中有一些周期性的现象可以用于计量时间，比如：树的年轮和河底的沉积物。
 
 如果我们无法计数，我们必须要寻找其他测量时间的方法。

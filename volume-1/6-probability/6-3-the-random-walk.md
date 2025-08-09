@@ -1,3 +1,9 @@
+---
+layout: default
+title: 6-3 The Random Walk
+parent: 6. Probability
+nav_order: 3
+---
 这里有另一个有趣的问题，包含概率的知识——随机游走。与抛掷硬币相似，每次游走仅仅会出现两种可能的结果，要么是向前走（假设起始位置为 x，该次距离的变化为 toward + x），要么是向后走（toward - x）。这类通用的问题涉及到气体中的原子运动——布朗运动以及测量中的误差融合。
 
 ![随机游走的进程图](/assets/volume-1/fig-6-5.png)

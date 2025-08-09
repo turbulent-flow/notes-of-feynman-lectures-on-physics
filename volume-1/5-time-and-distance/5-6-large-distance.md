@@ -1,3 +1,9 @@
+---
+layout: default
+title: 5-6 Large Distance
+parent: 5. Time and Distance
+nav_order: 6
+---
 与测量时间相类似，我们可以通过拆分距离单位来测量越来越小的距离，但是如果距离很远时该怎么办呢？
 
 ## 三角测量

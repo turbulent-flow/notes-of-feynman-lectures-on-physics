@@ -1,3 +1,9 @@
+---
+layout: default
+title: 1-3 Atomic Processes
+parent: 1. Atom in Motion
+nav_order: 3
+---
 原子假说不仅揭示了物质的三种状态，而且也能够说明一些进程。
 
 ## 第一个进程：水的表面

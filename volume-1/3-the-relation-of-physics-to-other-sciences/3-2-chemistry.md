@@ -1,3 +1,9 @@
+---
+layout: default
+title: 3-2 Chemistry
+parent: 3. The Relation of Physics to Other Sciences
+nav_order: 2
+---
 在科学中被物理影响最深的是化学。
 
 ## 无机化学

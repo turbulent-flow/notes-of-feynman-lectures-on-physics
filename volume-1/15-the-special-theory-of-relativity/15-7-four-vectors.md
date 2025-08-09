@@ -1,3 +1,9 @@
+---
+layout: default
+title: 15-7 Four Vectors
+parent: 15. The Special Theory of Relativity
+nav_order: 7
+---
 让我们看看在洛伦兹变换中还能发现其他什么东西。很有意思的是在 $x$ 与 $t$ 的等式之间的变换可以类比于 $x$ 和 $y$ 的等式的变换，我们之前在第 11 章学过坐标的旋转。我们知道
 
 ##### eq-15-8

@@ -1,3 +1,9 @@
+---
+layout: default
+title: 6-4 A Probability Distribution
+parent: 6. Probability
+nav_order: 4
+---
 让我们现在回到随机游走，并且考虑一个它的改版的情况。如果除了每一步的方向是随机选择的，它的步长也以某种不可预知的方式进行变化，仅有的条件是它的平均步长是一个单位。类似于这种情况，更具代表性的是气体中分子的热运动。如果我们定义步长为 S，它可以是任意的值，但是大部分情况趋近于于 1。为了特别的说明，我们应该让 $\langle{S^2}\rangle{}=1$ ，或者，等价的， $S_{rms}=1$ 。对于 $\langle{D^2}\rangle{}$ 我们的推导应该和之前一样，除了公式 6.8（ $\langle{D_N^2}\rangle{} = \langle{D_{N - 1}^2}\rangle{} + 1$ ）应该改成：
 $$\langle{D_N^2}\rangle{}=\langle{D_{N-1}^2}\rangle{}+\langle{S^2}\rangle{}=\langle{D_{N-1}^2}\rangle{}+1$$
 

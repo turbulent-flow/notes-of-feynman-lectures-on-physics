@@ -1,3 +1,9 @@
+---
+layout: default
+title: 12-5 Pseudo Forces
+parent: 12. Characteristics of Force
+nav_order: 5
+---
 接下来我们要讨论的作用力或许可以叫做假想力。在第11章，我们讨论过两个人之间的关系，乔和莫，他们使用不同的坐标系。让我们假设由乔测量的粒子的位置是 $x$ ，由莫测量的是 $x^{'}$ ；然后定律如下：
 
 $$x=x^{'}+s,\quad y=y^{'},\quad z=z^{'}$$

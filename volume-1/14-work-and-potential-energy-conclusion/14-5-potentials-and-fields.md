@@ -1,3 +1,9 @@
+---
+layout: default
+title: 14-5 Potentials and Fields
+parent: 14. Work and Potential Energy Conclusion
+nav_order: 5
+---
 现在我们应该讨论涉及一些势能的观点以及有关场的观点。假设我们有两个非常大的物体 A 和 B，以及第三个非常小的，它由那两个吸引（引力），整体的作用力为 $\boldsymbol{F}$ 。我们在第 [12](/volume-1/12-characteristics-of-force/) 章已经注意到，在一个粒子上的引力可以被写作是它的质量 m 乘以另一个向量 $\boldsymbol{C}$ ，它仅仅取决于粒子的位置：
 
 $$\boldsymbol{F}=m\boldsymbol{C}$$

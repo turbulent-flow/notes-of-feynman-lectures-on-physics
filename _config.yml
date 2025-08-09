@@ -1,0 +1,15 @@
+title: Notes of Feynman Lectures on Physics
+description: 读书笔记
+remote_theme: just-the-docs/just-the-docs
+
+# 项目站点建议设置 url/baseurl，避免资源路径问题
+url: https://turbulent-flow.github.io
+baseurl: /notes-of-feynman-lectures-on-physics
+
+search_enabled: true
+heading_anchors: true
+
+# 可选：MathJax
+kramdown:
+  input: GFM
+  math_engine: mathjax

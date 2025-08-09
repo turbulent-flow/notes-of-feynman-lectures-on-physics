@@ -1,3 +1,9 @@
+---
+layout: default
+title: 15-1 The Principle of Relativity
+parent: 15. The Special Theory of Relativity
+nav_order: 1
+---
 在超过 200 年的时间里，大家都以为由牛顿提出的运动等式正确地描述了自然，直到在这些定律中有一个错误首次被发现，修正它的方式也被发现。错误以及它的修正由爱因斯坦在 1905 年发现。
 
 牛顿的第二定律，我们用等式表示为

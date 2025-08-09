@@ -1,3 +1,9 @@
+---
+layout: default
+title: 11-7 Scalar Product of Vectors
+parent: 11. Vectors
+nav_order: 7
+---
 让我们更进一步学习向量的属性。很容易看出在空间中一步的长度在任何坐标系中都是相同的。如果一个步长 $\boldsymbol{r}$ 在一个坐标系中由 $x, y, z$ 表示，在另一个坐标系中由 $x^{'}, y^{'}, z^{'}$ 表示，那么距离 $r=|\boldsymbol{r}|$ 在两者中都是一样的。等式如下：
 
 $$r=\sqrt{x^2+y^2+z^2}$$

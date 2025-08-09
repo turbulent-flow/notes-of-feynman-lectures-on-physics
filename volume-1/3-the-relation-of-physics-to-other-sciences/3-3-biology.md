@@ -1,3 +1,9 @@
+---
+layout: default
+title: 3-3 Biology
+parent: 3. The Relation of Physics to Other Sciences
+nav_order: 3
+---
 本节用了一正一反的神经传导的例子作为开篇，描述了它们之间的联系。(生物学帮助物理学发现了能量守恒定律。)
 
 ## 生物与物理的联系

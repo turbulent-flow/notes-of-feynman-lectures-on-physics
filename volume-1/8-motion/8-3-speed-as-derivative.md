@@ -1,3 +1,9 @@
+---
+layout: default
+title: 8-3 Speed as Derivative
+parent: 8. Motion
+nav_order: 3
+---
 我们刚刚做的东西在数学里很普遍，为方便起见，我们把特殊符号 $\epsilon$ 和 $x$ 分配在数值上。在这个表示里， $\epsilon$ 变成了 $\Delta{t}$ ， $x$ 变成了 $\Delta{s}$ 。 $\Delta{s}$ 表示“t 额外多出了一点”，隐含的信息是它可以变得更小。前缀 $\Delta$ 不是乘法，就像 $\sin\theta$ 不是 $s\cdot{i}\cdot{n}\cdot{\theta}$ 。它简单地表示时间增加，提醒我们它是一个特殊的符号。 $\Delta{s}$ 类比于距离 $s$ 。因为 $\Delta$ 不是一个因子，它不能在占比 $\Delta{s}/\Delta{t}$ 中取消变成 $s/t$ ，就像 $\sin{\theta}/\sin{2\theta}$ 不能简写成 $1/2$ 一样。在这个表示里，速度等于 $\Delta{s}/\Delta{t}$ 的极限，当 $\Delta{t}$ 变得更小，或者
 
 $$v=\lim_{\Delta{t} \to 0}\frac{\Delta{s}}{\Delta{t}}$$

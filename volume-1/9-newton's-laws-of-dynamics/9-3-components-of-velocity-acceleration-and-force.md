@@ -1,3 +1,9 @@
+---
+layout: default
+title: 9-3 Components of Velocity Acceleration and Force
+parent: 9. Newton's Laws of Dynamics
+nav_order: 3
+---
 在等式（[9.4](/volume-1/9-newton's-laws-of-dynamics/9-2-speed-and-velocity.md#eq-9-4)）中，我们把速度分解成部分，告知物体在 x-方向、y-方向和 z-方向上是如何移动的。如果我们给出它的三个矩形部分的数值，速度就能被完整的阐释，包含数值和方向：
 
 $$v_x=dx/dt$$

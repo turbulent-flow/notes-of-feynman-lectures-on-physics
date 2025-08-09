@@ -1,3 +1,9 @@
+---
+layout: default
+title: 15-3 The Michelson Morley Experiment
+parent: 15. The Special Theory of Relativity
+nav_order: 3
+---
 正如之前所说的，大家曾经尝试使用“以太”假说去确定地球的绝对速度，以太曾被认为是无处不在的。其中最著名的实验是由迈克耳孙和莫雷在 1887 年做的。该实验的负面结论最终由爱因斯坦在 18 年后解释。
 
 ![迈克耳孙-莫雷实验的原理图](/assets/volume-1/fig-15-2.png)

@@ -1,3 +1,9 @@
+---
+layout: default
+title: 10-2 Conservation of Momentum
+parent: 10. Conservation of Momentum
+nav_order: 2
+---
 有关上述关系的有趣结论是什么？假设我们仅有两个交互的粒子，质量也许不同，被标记为 1 和 2 。在它们之间的作用力是相等且相反的；结论是啥？根据牛顿第二定律，作用力是动量变化的时间比率，所以我们的总结是粒子 1 的动量 $p_1$ 的变化率等于负的粒子 2 的动量 $p_2$ 的变化率，即：
 
 $$dp_1/dt=-dp_2/dt$$

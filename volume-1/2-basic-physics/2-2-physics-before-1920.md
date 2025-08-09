@@ -1,3 +1,9 @@
+---
+layout: default
+title: 2-2 Physics Before 1920
+parent: 2. Basic Physics
+nav_order: 2
+---
 1920年之前，整个宇宙的运行可以用欧几里得几何来描述；在介质中改变的事物叫做时间。我们从中拿出几个部分进行说明。
 
 ## 粒子相关

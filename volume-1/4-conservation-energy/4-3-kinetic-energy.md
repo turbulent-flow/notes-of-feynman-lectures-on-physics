@@ -1,3 +1,9 @@
+---
+layout: default
+title: 4-3 Kinetic Energy
+parent: 4. Conservation Energy
+nav_order: 3
+---
 ![摆](/assets/volume-1/fig-4-7.png)
 
 如图所示，我们把摆球拉到一边释放，它会来来回回地运动。通过实验我们发现：

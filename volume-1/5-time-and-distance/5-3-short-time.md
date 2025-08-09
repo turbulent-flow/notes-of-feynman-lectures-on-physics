@@ -1,3 +1,9 @@
+---
+layout: default
+title: 5-3 Short Time
+parent: 5. Time and Distance
+nav_order: 3
+---
 如果装置“摆”在一小时内摆动了 3600 次（假设一天有24个小时），我们可以称“摆”的周期为 1 秒，我们大约把原始的时间单位（一天）大约拆分了 10<sup>-5</sup> 倍。
 
 ## 再往下拆需要使用电子震荡器

@@ -1,3 +1,9 @@
+---
+layout: default
+title: 11-6 Newton's Laws in Vector Notation
+parent: 11. Vectors
+nav_order: 6
+---
 为了以向量的形式书写牛顿定律，我们还要再走一步，定义加速度向量。它是速度向量的时间导数，可以被简单地阐释为它的部分是 x、y 和 z 相对于 t 的二阶导数：
 
 ##### eq-11-11

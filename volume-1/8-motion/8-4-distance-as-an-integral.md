@@ -1,3 +1,9 @@
+---
+layout: default
+title: 8-4 Distance as an Integral
+parent: 8. Motion
+nav_order: 4
+---
 ##### table-8-4
 ![一个坠落球体的速度表](/assets/volume-1/table-8-4.png)
 

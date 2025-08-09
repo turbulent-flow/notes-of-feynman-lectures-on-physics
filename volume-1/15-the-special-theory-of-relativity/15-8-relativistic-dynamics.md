@@ -1,3 +1,9 @@
+---
+layout: default
+title: 15-8 Relativistic Dynamics
+parent: 15. The Special Theory of Relativity
+nav_order: 8
+---
 我们现在准备探索，更加通用的，力学定律在洛伦兹变换下是什么样的形式。【我们之前解释过长度和时间是如何的变化，但是并没有解释是如何得到修正版的公式，对于 $m$ （等式 [15.1](/volume-1/15-the-special-theory-of-relativity/15-1-the-principle-of-relativity.md#eq-15-1)）。我们会在下一节去做。】为了看到爱因斯坦的修正结果，对于牛顿力学的 $m$ ，我们从牛顿定律出发，作用力是动量的变化率，或则
 
 $$\boldsymbol{F}=d(m\boldsymbol{v})/dt$$

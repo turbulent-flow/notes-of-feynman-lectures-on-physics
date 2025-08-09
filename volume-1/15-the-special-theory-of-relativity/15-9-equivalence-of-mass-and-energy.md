@@ -1,3 +1,9 @@
+---
+layout: default
+title: 15-9 Equivalence of Mass and Energy
+parent: 15. The Special Theory of Relativity
+nav_order: 9
+---
 上面的观测让爱因斯坦提出一个物体的质量可以表示地更加简单，相比公式 [15.1](/volume-1/15-the-special-theory-of-relativity/15-1-the-principle-of-relativity.md#eq-15-1) ，如果我们说质量等于整体的能量除以 $c^2$ 。如果等式 [15.11](/volume-1/15-the-special-theory-of-relativity/15-8-relativistic-dynamics.md#eq-15-11) 乘以 $c^2$ ，结果是
 
 ##### eq-15-12

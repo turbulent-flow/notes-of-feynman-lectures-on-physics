@@ -1,3 +1,9 @@
+---
+layout: default
+title: 1-2 Matter Is Made of Atoms
+parent: 1. Atom in Motion
+nav_order: 2
+---
 物质（拥有质量，占有物理空间）是由原子组成的，该章节从水的三种形态加以说明。
 
 ## 液态

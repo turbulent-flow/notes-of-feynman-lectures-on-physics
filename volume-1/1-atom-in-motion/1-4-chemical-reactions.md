@@ -1,3 +1,9 @@
+---
+layout: default
+title: 1-4 Chemical Reactions
+parent: 1. Atom in Motion
+nav_order: 4
+---
 迄今为止展示的是物质的物理进程，其内部的原子在此进程中并没有改变自己的结伴对象（没有形成新的分子），本节用两个例子来说明化学进程。
 
 ## 碳在氧气中燃烧

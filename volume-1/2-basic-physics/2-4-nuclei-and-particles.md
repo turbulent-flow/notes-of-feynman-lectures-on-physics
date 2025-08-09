@@ -1,3 +1,9 @@
+---
+layout: default
+title: 2-4 Nuclei and Particles
+parent: 2. Basic Physics
+nav_order: 4
+---
 ## 是什么让质子和中子保持在一起？
 Yukawa 说是某种类型的场的作用。在1947年（或者是1948年）另一个粒子被发现，the π-meson, or pion，证明了他的判断。
 

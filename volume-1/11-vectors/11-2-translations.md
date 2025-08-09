@@ -1,3 +1,9 @@
+---
+layout: default
+title: 11-2 Translations
+parent: 11. Vectors
+nav_order: 2
+---
 我们应该把分析限制在力学，因为我们拥有足够的知识。在上一章节里我们看到对于每一个粒子，力学定律可以总结为三个等式：
 
 ##### eq-11-1

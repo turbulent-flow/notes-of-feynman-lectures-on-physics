@@ -1,3 +1,9 @@
+---
+layout: default
+title: 13-4 Gravitational Field of Large Objects
+parent: 13. Work and Potential Energy a
+nav_order: 4
+---
 ![由一个无限大的平板在一个质量点位处生成的引力场](/assets/volume-1/fig-13-5.png)
 
 现在我们要计算场的大小，会在一些包含质量分布的物理场景中碰到。我们迄今为止还未考虑过质量分布，仅限粒子，计算这些作用力会很有趣，当它们是由不止一个粒子产生时。首先我们要求得一个质量上的引力，它是由一块平板生成，长度无限。在一个给定的 P 点处的单位质量上的作用力，由这块板子（Fig.13-5）生成，指向板子。从板子到该点的距离是 a，这个巨型板子的单位面积的质量是 $\mu$ 。我们应该假设 $\mu$ 是恒定的；它是一块均匀的板子。现在，很小的场 $d\boldsymbol{C}$ 是多少，它是由坐落于 $\rho$ 和 $d\rho$ 之间的 $dm$ 生成的，从离 P 点最近的板子上的 O 点处。答案是 $d\boldsymbol{C}=-G(dm\boldsymbol{r}/r^3)$ 。该场是沿着 $\boldsymbol{r}$ 的，我们知道仅有它的 x 部分会保留，当我们把所有小的向量 $d\boldsymbol{C}$ 相加。 $d\boldsymbol{C}$ 的 x-部分是

@@ -1,3 +1,9 @@
+---
+layout: default
+title: 10-5 Relativistic Momentum
+parent: 10. Conservation of Momentum
+nav_order: 5
+---
 在现代动量守恒定律遭遇了修正。但是它依然是对的，改变主要在于事物的定义。在相对论中，我们证明确实存在动量守恒；粒子有质量，动量依然是 mv ，质量乘以速度，但是质量会随着速度改变，因此动量也会改变。质量会根据下面的定律随着速度发生变化：
 
 $$m=\frac{m_0}{\sqrt{1-v^2/c^2}}$$

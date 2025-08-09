@@ -1,3 +1,9 @@
+---
+layout: default
+title: 4-2 Gravitational Potential Energy
+parent: 4. Conservation Energy
+nav_order: 2
+---
 自然的法则可以从一些事实和封闭的逻辑推导当中提炼出来。
 
 ## 一个简单的杠杆装置

@@ -1,3 +1,9 @@
+---
+layout: default
+title: 16-3 Transformation of Velocities
+parent: 16. Relativistic Energy and Momentum
+nav_order: 3
+---
 爱因斯坦与牛顿的相对论的主要区别在于相对运动中的坐标与时间的变换定律不同。正确的应该是洛伦兹变换定律，
 
 ##### eq-16-1

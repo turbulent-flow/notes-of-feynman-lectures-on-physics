@@ -1,3 +1,9 @@
+---
+layout: default
+title: 3-4 Astronomy
+parent: 3. The Relation of Physics to Other Sciences
+nav_order: 4
+---
 天文学通过揭示简单的行星运动，开启了物理学派。不过其最重要的发现是星球构成的原子与地球无异。
 
 太阳的能量（释放的光与热）来源于内部氢原子的核“燃烧”，氢原子被转换成了氦原子。

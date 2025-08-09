@@ -1,3 +1,9 @@
+---
+layout: default
+title: 6-1 Chance Likelihood
+parent: 6. Probability
+nav_order: 1
+---
 这个世界的真实逻辑存在于概率的微积分计算之中。
 ——詹姆斯·克拉克·麦克斯韦
 

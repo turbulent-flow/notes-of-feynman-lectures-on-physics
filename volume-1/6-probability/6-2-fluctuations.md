@@ -1,3 +1,9 @@
+---
+layout: default
+title: 6-2 Fluctuations
+parent: 6. Probability
+nav_order: 2
+---
 让我们再进一步探索。
 
 ## 如果扔出硬币 N 次，那么我们期望得到正面的次数是多少？
