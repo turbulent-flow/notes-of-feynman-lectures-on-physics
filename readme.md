@@ -4,3 +4,7 @@
 该电子版的丛书（The New Millennium Edition）与原始的红书几乎没有差别，红书的链接为：http://www.feynmanlectures.caltech.edu。
 
 书中特意感谢了参与贡献的学者和读者，以及 Ford Foundation 的赞助。没有他们的付出，就没有现今的“费曼的物理讲义”。
+
+**近期的更新**：该文章目前已经可以在「github pages」浏览，地址是：https://turbulent-flow.github.io/notes-of-feynman-lectures-on-physics/
+- 支持目录导航。
+- 尝试对一些模糊的术语添加脚注。
