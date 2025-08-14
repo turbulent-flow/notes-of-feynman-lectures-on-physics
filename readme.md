@@ -1,10 +1,10 @@
-## Preface
-前言介绍了这个系列的由来，受到 Matthew Sands 教授的启发，决定由 Richard Feynman 教授讲授物理学的课程，最开始通过磁带记录讲义的内容，后面随着需求的扩大，该系列被数字化（发布了电子版的丛书）——采用了全新的技术对文本、图片和公式进行了优化。
+## 写在前面的话
+这个项目乍看之下是用 AI 生成的，比如像这样，复制[小红书](http://www.feynmanlectures.caltech.edu)一个的段落，然后让 DeepSeek 翻译，再提交到项目里装装样子。其实根本不用这么麻烦，我试了下利用生成式 AI，可以直接让它提 Pull Request，甚至连“提交”都省了...
 
-该电子版的丛书（The New Millennium Edition）与原始的红书几乎没有差别，红书的链接为：http://www.feynmanlectures.caltech.edu。
+## 为什么要做这个 AI 生成的项目
+它当然不是 AI 生成的，除了目录是借助 AI 生成的以外，该项目是我学习物理所做的笔记。前面几章还有“笔记”的模样，大概到了第六章中旬已经算作翻译了，因为我不知道该如何去用“笔记”的形式去阐述物理的知识，再加上费曼教授妙趣横生的“讲授”，我就运用自己“受限的大脑”把这份喜悦转录成册。但是正是因为这是“受限的头脑”所产出的，必然会有蛮多的“纰漏”，甚至是严重的错误，还请大家能多多指正，好让我去修正它。
 
-书中特意感谢了参与贡献的学者和读者，以及 Ford Foundation 的赞助。没有他们的付出，就没有现今的“费曼的物理讲义”。
-
-**近期的更新**：该文章目前已经可以在「github pages」浏览，点击[链接](https://turbulent-flow.github.io/notes-of-feynman-lectures-on-physics/)。
+## 迁移至 Github Page
+为了得到更好的阅读体验，目前项目正在逐步迁移至 Github Page，点击[页面地址](https://turbulent-flow.github.io/notes-of-feynman-lectures-on-physics/)。
 - 支持目录导航。
 - 尝试对一些模糊的术语添加脚注。
