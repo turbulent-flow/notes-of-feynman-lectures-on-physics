@@ -44,7 +44,7 @@ $$\Delta{W}=-\Delta{U}=F_x\Delta{x}$$
 
 $$F_x=-\Delta{U}/\Delta{x}$$
 
-当然这是不准确的。我们真正想要的是 ([14.10](/volume-1/14-work-and-potential-energy-conclusion/14-5-potentials-and-fields.md#eq-14-10)) 的极限，随着 $\Delta{x}$ 变得越来越小，因为只有在非常小的 $\Delta{x}$ 的极限中，它才是正确的。我们意识到这是 $U$ 相对于 $x$ 的导数，我们更愿意把它写作 $-dU/dx$ 。但是 $U$ 取决于 $(x,y,z)$ ，数学家发明了一个不同的符号，来提醒我们要非常地小心，当我们在求导这样的函数时，以便于我们牢记我们只考虑 $x$ 改变， $y$ 和 $z$ 不会改变。不是 $d$ ，而是一个“反向6”，或者 $\partial$ 。（ $\partial$ 应该从微积分一开始就被使用，因为我们总是想取消 $d$ ，但是我们从未想取消 $\partial$ ！）所以他们写作 $\partial{U}/\partial{x}$ ，更进一步，出于强迫症，如果他们想非常地认真，会在它旁边划条线，在底部写小的 $yz$ （ $\partial{U}/\partial{xyz}$ ），这表示“ $U$ 相对于 $x$ 的导数，保持 $y$ 和 $z$ 恒定。”大多数时候，我们不会写标记，关于保持谁恒定，因为可以从上下文读出，所以我们一般不会使用 $y$ 和 $z$ 的划线。总是使用 $\partial$ ，而不是 $d$ ，作为一个警告，它是一个涉及保持某些其他变量恒定的导数。这被称之为偏导数；它是一个我们只改变 $x$ 的导数。
+当然这是不准确的。我们真正想要的是 ([14.10](/volume-1/14-work-and-potential-energy-conclusion/14-5-potentials-and-fields.html#eq-14-10)) 的极限，随着 $\Delta{x}$ 变得越来越小，因为只有在非常小的 $\Delta{x}$ 的极限中，它才是正确的。我们意识到这是 $U$ 相对于 $x$ 的导数，我们更愿意把它写作 $-dU/dx$ 。但是 $U$ 取决于 $(x,y,z)$ ，数学家发明了一个不同的符号，来提醒我们要非常地小心，当我们在求导这样的函数时，以便于我们牢记我们只考虑 $x$ 改变， $y$ 和 $z$ 不会改变。不是 $d$ ，而是一个“反向6”，或者 $\partial$ 。（ $\partial$ 应该从微积分一开始就被使用，因为我们总是想取消 $d$ ，但是我们从未想取消 $\partial$ ！）所以他们写作 $\partial{U}/\partial{x}$ ，更进一步，出于强迫症，如果他们想非常地认真，会在它旁边划条线，在底部写小的 $yz$ （ $\partial{U}/\partial{xyz}$ ），这表示“ $U$ 相对于 $x$ 的导数，保持 $y$ 和 $z$ 恒定。”大多数时候，我们不会写标记，关于保持谁恒定，因为可以从上下文读出，所以我们一般不会使用 $y$ 和 $z$ 的划线。总是使用 $\partial$ ，而不是 $d$ ，作为一个警告，它是一个涉及保持某些其他变量恒定的导数。这被称之为偏导数；它是一个我们只改变 $x$ 的导数。
 
 因此我们发现在 x-方向上的作用力是负的 $U$ 相对于 $x$ 的偏导数：
 
@@ -76,9 +76,9 @@ $$
 
 $$\boldsymbol{F}=-\nabla U,\quad \boldsymbol{C}=-\nabla \Psi$$
 
-使用 $\nabla$ 可以让我们快速地测试我们是否真的有一个向量等式，但是等式 [14.14](/volume-1/14-work-and-potential-energy-conclusion/14-5-potentials-and-fields.md#ea-14-14) 实际上与等式 [14.11](/volume-1/14-work-and-potential-energy-conclusion/14-5-potentials-and-fields.md#eq-14-11)、[14.12](/volume-1/14-work-and-potential-energy-conclusion/14-5-potentials-and-fields.md#eq-14-12)、[14.13](/volume-1/14-work-and-potential-energy-conclusion/14-5-potentials-and-fields.md#eq-14-13) 完全相同；它只是书写它们的另一种方式，因为我们不想每次都写三遍等式，所以我们写作 $\nabla U$ 。
+使用 $\nabla$ 可以让我们快速地测试我们是否真的有一个向量等式，但是等式 [14.14](/volume-1/14-work-and-potential-energy-conclusion/14-5-potentials-and-fields.html#ea-14-14) 实际上与等式 [14.11](/volume-1/14-work-and-potential-energy-conclusion/14-5-potentials-and-fields.html#eq-14-11)、[14.12](/volume-1/14-work-and-potential-energy-conclusion/14-5-potentials-and-fields.html#eq-14-12)、[14.13](/volume-1/14-work-and-potential-energy-conclusion/14-5-potentials-and-fields.html#eq-14-13) 完全相同；它只是书写它们的另一种方式，因为我们不想每次都写三遍等式，所以我们写作 $\nabla U$ 。
 
-场和势的另一个示例是带电的情形。在电的例子中，在一个静止物体上的作用力是电荷乘以电场： $\boldsymbol{F}=q\boldsymbol{E}$ 。（通常，在带电问题中的作用力的 x-部分有一部分取决于磁场。从等式 [12.11](/volume-1/12-characteristics-of-force/12-4-fundamental-forces-fields.md#eq-12-11) 中可以很容易看出，在一个粒子上由磁场产生的作用力总是与它的速度垂直，也与场垂直。因为在一个移动电荷上由磁场产生的作用力垂直于速度，在移动电荷上的磁场不做功，因为运动垂直于作用力。因此，在电场和磁场的势能的理论计算中，我们可以忽略磁场的贡献，因为它不会改变势能。）假设我们只有电场。我们可以计算能量，或者做功，与计算引力相同，计算一个数值 $\phi$ ，它是负的 $\boldsymbol{E}\cdot d\boldsymbol{s}$ 的积分，从任意固定的点到我们做计算的点，那么在一个电场中的势能就是电荷乘以这个数值 $\phi$ ：
+场和势的另一个示例是带电的情形。在电的例子中，在一个静止物体上的作用力是电荷乘以电场： $\boldsymbol{F}=q\boldsymbol{E}$ 。（通常，在带电问题中的作用力的 x-部分有一部分取决于磁场。从等式 [12.11](/volume-1/12-characteristics-of-force/12-4-fundamental-forces-fields.html#eq-12-11) 中可以很容易看出，在一个粒子上由磁场产生的作用力总是与它的速度垂直，也与场垂直。因为在一个移动电荷上由磁场产生的作用力垂直于速度，在移动电荷上的磁场不做功，因为运动垂直于作用力。因此，在电场和磁场的势能的理论计算中，我们可以忽略磁场的贡献，因为它不会改变势能。）假设我们只有电场。我们可以计算能量，或者做功，与计算引力相同，计算一个数值 $\phi$ ，它是负的 $\boldsymbol{E}\cdot d\boldsymbol{s}$ 的积分，从任意固定的点到我们做计算的点，那么在一个电场中的势能就是电荷乘以这个数值 $\phi$ ：
 
 $$
 \begin{align*}

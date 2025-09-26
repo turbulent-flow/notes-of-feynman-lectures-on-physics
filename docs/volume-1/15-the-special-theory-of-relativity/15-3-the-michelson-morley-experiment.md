@@ -46,7 +46,7 @@ $$t_3=L/\sqrt{c^2-u^2}$$
 
 $$2t_3=\frac{2L}{\sqrt{c^2-u^2}}=\frac{2L/c}{\sqrt{1-u^2/c^2}}$$
 
-我们现在可以比较两束光所花费的时间。在表达式 [15.4](/volume-1/15-the-special-theory-of-relativity/15-3-the-michelson-morley-experiment.md#eq-15-4) 和 [15.5](/volume-1/15-the-special-theory-of-relativity/15-3-the-michelson-morley-experiment.md#eq-15-5) 中分子是相同的，表示在装置静止时所花费的时间。在分母中，元素 $u^2/c^2$ 会很小，除非 u 可以与 c 进行比较。分母表示在时间上的改变，由装置的运动所致。这些改变并不相同——到 C 再返回所用的时间要比到 E 再返回所用的少一点，即使镜子到 B 的距离是相等的，需要我们做的就是测量精度的差异。
+我们现在可以比较两束光所花费的时间。在表达式 [15.4](/volume-1/15-the-special-theory-of-relativity/15-3-the-michelson-morley-experiment.html#eq-15-4) 和 [15.5](/volume-1/15-the-special-theory-of-relativity/15-3-the-michelson-morley-experiment.html#eq-15-5) 中分子是相同的，表示在装置静止时所花费的时间。在分母中，元素 $u^2/c^2$ 会很小，除非 u 可以与 c 进行比较。分母表示在时间上的改变，由装置的运动所致。这些改变并不相同——到 C 再返回所用的时间要比到 E 再返回所用的少一点，即使镜子到 B 的距离是相等的，需要我们做的就是测量精度的差异。
 
 这里有一个不是那么重要的技术点——假设两个长度 L 不是完全地相等？实际上，我们可以确信无法让它们完全相等。在示例中，我们简单地把装置旋转 90 度，好让 BC 处于运动的线上，BE 垂直于运动。任何细小的差异在长度上变得无关紧要，我们想要看到的是当我们旋转装置时在干涉条纹上的变化。
 
@@ -58,12 +58,12 @@ $$2t_3=\frac{2L}{\sqrt{c^2-u^2}}=\frac{2L/c}{\sqrt{1-u^2/c^2}}$$
 
 $$L_{\parallel}=L_0\sqrt{1-u^2/c^2}$$
 
-当这个修正被应用到迈克耳孙-莫雷干涉测量装置上，由 B 到 C 的距离不会改变，但是由 B 到 E 的距离缩减为 $L\sqrt{1-u^2/c^2}$ 。因此等式 [15.5](/volume-1/15-the-special-theory-of-relativity/15-3-the-michelson-morley-experiment.md#eq-15-5) 不会改变，但是等式 [15.4](/volume-1/15-the-special-theory-of-relativity/15-3-the-michelson-morley-experiment.md#eq-15-4) 的 L 必须根据等式 [15.6](/volume-1/15-the-special-theory-of-relativity/15-3-the-michelson-morley-experiment.md#ea-15-6) 进行修正。当完成后，我们得到
+当这个修正被应用到迈克耳孙-莫雷干涉测量装置上，由 B 到 C 的距离不会改变，但是由 B 到 E 的距离缩减为 $L\sqrt{1-u^2/c^2}$ 。因此等式 [15.5](/volume-1/15-the-special-theory-of-relativity/15-3-the-michelson-morley-experiment.html#eq-15-5) 不会改变，但是等式 [15.4](/volume-1/15-the-special-theory-of-relativity/15-3-the-michelson-morley-experiment.html#eq-15-4) 的 L 必须根据等式 [15.6](/volume-1/15-the-special-theory-of-relativity/15-3-the-michelson-morley-experiment.html#ea-15-6) 进行修正。当完成后，我们得到
 
 ##### eq-15-7
 
 $$t_1+t_2=\frac{(2L/c)\sqrt{1-u^2/c^2}}{1-u^2/c^2}=\frac{2L/c}{\sqrt{1-u^2/c^2}}$$
 
-将结论与等式 [15.5](/volume-1/15-the-special-theory-of-relativity/15-3-the-michelson-morley-experiment.md#eq-15-5) 进行比较。如果装置以刚刚描述的方式缩小，我们可以理解迈克耳孙-莫雷实验为什么毫无效果。虽然缩小假说成功地解释了实验的负面结论，但是它引起了争议，它的发现纯粹是为了逃避困难，过于刻意。然而在发现以太风的其他实验中，相似的困难会出现，自然似乎在酝酿一场“阴谋”来阻止人类前行，通过引入某些新的现象打消他以为所有的现象允许测量 u 的念头。
+将结论与等式 [15.5](/volume-1/15-the-special-theory-of-relativity/15-3-the-michelson-morley-experiment.html#eq-15-5) 进行比较。如果装置以刚刚描述的方式缩小，我们可以理解迈克耳孙-莫雷实验为什么毫无效果。虽然缩小假说成功地解释了实验的负面结论，但是它引起了争议，它的发现纯粹是为了逃避困难，过于刻意。然而在发现以太风的其他实验中，相似的困难会出现，自然似乎在酝酿一场“阴谋”来阻止人类前行，通过引入某些新的现象打消他以为所有的现象允许测量 u 的念头。
 
 最终由庞加莱指出，这场阴谋本身就是一条自然定律！庞加莱提出有这样一条自然定律，不可能通过任何实验发现以太风；也就是，没有方法可以确定绝对速度。
