@@ -15,4 +15,4 @@ heading_anchors: true
 kramdown:
   input: GFM
   math_engine: mathjax
-  
+  math_parser: mathjax
