@@ -1,6 +1,8 @@
 title: Notes
 description: 读书笔记
 remote_theme: just-the-docs/just-the-docs
+plugins:
+  - jekyll-remote-theme
 
 # 项目站点建议设置 url/baseurl，避免资源路径问题
 url: https://turbulent-flow.github.io
@@ -13,3 +15,4 @@ heading_anchors: true
 kramdown:
   input: GFM
   math_engine: mathjax
+  
