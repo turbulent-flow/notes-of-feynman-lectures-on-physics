@@ -78,7 +78,7 @@ $$\frac{d(\frac{1}{2}mv^2)}{dt}=\frac{d(\frac{1}{2}m\boldsymbol{v}\cdot \boldsym
 
 由于动能的概念，以及通常情况的能量，非常的重要，各种不同的名字被给出来，对应等式中的一些重要的元素，比如， $\frac{1}{2}mv^2$ 被称为动能。 $\boldsymbol{F}\cdot \boldsymbol{v}$ 被叫做功率：作用在一个物体上的力乘以该物体的速度（向量“点”积）是功率，由那个作用力转移给物体。因此我们有了一个很棒的理论：一个物体的动能的变化率等于作用其上的力做的功率。
 
-为了学习能量守恒，我们想要更加深入地分析。让我们估算在很短的时间 $dt$ 内动能的变化。如果我们把等式[13.7](/volume-1/13-work-and-potential-energy-A/13-1-energy-of-a-falling-body.html#eq-13-7)的两边都乘以 $dt$ ，我们发现在动能中的变化差是作用力“点”移动的距离差：
+为了学习能量守恒，我们想要更加深入地分析。让我们估算在很短的时间 $dt$ 内动能的变化。如果我们把等式[13.7](/notes-of-feynman-lectures-on-physics/volume-1/13-work-and-potential-energy-A/13-1-energy-of-a-falling-body.html#eq-13-7)的两边都乘以 $dt$ ，我们发现在动能中的变化差是作用力“点”移动的距离差：
 
 ##### eq13-8
 

@@ -32,7 +32,7 @@ $$
 
 $$x'=v_{x'}t'$$
 
-现在我们只需要计算由外面观测者所看到的一个物体的位置与时间是多少，这个物体拥有关系式 [16.2](/docs/volume-1/16-relativistic-energy-and-momentum/16-3-transformation-of-velocities.html#eq-16-2)，它包含 $x'$ 和 $t'$ 。所以我们简单地把 [16.3](/docs/volume-1/16-relativistic-energy-and-momentum/16-3-transformation-of-velocities.html#eq-16-3) 代入到 [16.2](/docs/volume-1/16-relativistic-energy-and-momentum/16-3-transformation-of-velocities.html#eq-16-2)，得到
+现在我们只需要计算由外面观测者所看到的一个物体的位置与时间是多少，这个物体拥有关系式 [16.2](/notes-of-feynman-lectures-on-physics/docs/volume-1/16-relativistic-energy-and-momentum/16-3-transformation-of-velocities.html#eq-16-2)，它包含 $x'$ 和 $t'$ 。所以我们简单地把 [16.3](/notes-of-feynman-lectures-on-physics/docs/volume-1/16-relativistic-energy-and-momentum/16-3-transformation-of-velocities.html#eq-16-3) 代入到 [16.2](/notes-of-feynman-lectures-on-physics/docs/volume-1/16-relativistic-energy-and-momentum/16-3-transformation-of-velocities.html#eq-16-2)，得到
 
 ##### eq-16-4
 
