@@ -4,7 +4,7 @@ title: 9-3 Components of Velocity Acceleration and Force
 parent: 9. Newton's Laws of Dynamics
 nav_order: 3
 ---
-在等式（[9.4](/volume-1/9-newton's-laws-of-dynamics/9-2-speed-and-velocity.md#eq-9-4)）中，我们把速度分解成部分，告知物体在 x-方向、y-方向和 z-方向上是如何移动的。如果我们给出它的三个矩形部分的数值，速度就能被完整的阐释，包含数值和方向：
+在等式（[9.4](/volume-1/9-newton's-laws-of-dynamics/9-2-speed-and-velocity.html#eq-9-4)）中，我们把速度分解成部分，告知物体在 x-方向、y-方向和 z-方向上是如何移动的。如果我们给出它的三个矩形部分的数值，速度就能被完整的阐释，包含数值和方向：
 
 $$v_x=dx/dt$$
 
@@ -38,4 +38,4 @@ $$F_z=F \cos(z, F)$$
 
 其中 F 是力的大小，（x, F）表示 x-轴和 F 方向的夹角，等等。
 
-牛顿第二定律在等式（[eq.9.7](/volume-1/9-newton's-laws-of-dynamics/9-3-components-of-velocity-acceleration-and-force.md#eq-9-7)） 中被完整地展示。如果我们知道在一个物体上的作用力，然后将其拆分成 x-、y-、z-部分，我就能通过这些等式求得该物体的运动。如果在 y-、z-方向上没有作用力，力仅仅作用在 x-方向上，我们说，它是垂直的。等式（[eq.9.7](/volume-1/9-newton's-laws-of-dynamics/9-3-components-of-velocity-acceleration-and-force.md#eq-9-7)）告诉我们在垂直方向上的力会发生变化，但是在水平方向上不会改变。这些曾被第7章的一个特殊装置描述过（如图 [Fig.7-3](/volume-1/7-the-theory-of-gravitation/7-4-newton's-law-of-gravitation.md#fig-7-3) 所示）。一个正在坠落的物体在水平方向上不会发生任何改变，同时它在垂直方向上的运动跟假定其水平运动为 0 的自由落体并无二致。换句话说，如果这些力不相关，在 x-、y-、z-方向上的运动是独立的。
+牛顿第二定律在等式（[eq.9.7](/volume-1/9-newton's-laws-of-dynamics/9-3-components-of-velocity-acceleration-and-force.html#eq-9-7)） 中被完整地展示。如果我们知道在一个物体上的作用力，然后将其拆分成 x-、y-、z-部分，我就能通过这些等式求得该物体的运动。如果在 y-、z-方向上没有作用力，力仅仅作用在 x-方向上，我们说，它是垂直的。等式（[eq.9.7](/volume-1/9-newton's-laws-of-dynamics/9-3-components-of-velocity-acceleration-and-force.html#eq-9-7)）告诉我们在垂直方向上的力会发生变化，但是在水平方向上不会改变。这些曾被第7章的一个特殊装置描述过（如图 [Fig.7-3](/volume-1/7-the-theory-of-gravitation/7-4-newton's-law-of-gravitation.html#fig-7-3) 所示）。一个正在坠落的物体在水平方向上不会发生任何改变，同时它在垂直方向上的运动跟假定其水平运动为 0 的自由落体并无二致。换句话说，如果这些力不相关，在 x-、y-、z-方向上的运动是独立的。
