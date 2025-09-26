@@ -36,7 +36,7 @@ $$F_{z^{'}}=F_z$$
 
 这些是由乔和莫所看到的数值之间的关系。
 
-![两个平行的坐标系](/assets/volume-1/fig-11-1.png)
+![两个平行的坐标系](/notes-of-feynman-lectures-on-physics/assets/volume-1/fig-11-1.png)
 
 问题是，如果乔知道牛顿定律，那么如果莫尝试写出牛顿定律，它们也会是正确的吗？我们从不同的原点测量会有区别吗？换句话说，假设等式 [11.1](/volume-1/11-vectors/11-2-translations.md#eq-11-1) 是正确的，等式 [11.2](/volume-1/11-vectors/11-2-translations.md#eq-11-2) 和 [11.3](/volume-1/11-vectors/11-2-translations.md#eq-11-3) 给出了测量的关系，那么下面的等式是正确的吗？
 

@@ -4,7 +4,7 @@ title: 4-3 Kinetic Energy
 parent: 4. Conservation Energy
 nav_order: 3
 ---
-![摆](/assets/volume-1/fig-4-7.png)
+![摆](/notes-of-feynman-lectures-on-physics/assets/volume-1/fig-4-7.png)
 
 如图所示，我们把摆球拉到一边释放，它会来来回回地运动。通过实验我们发现：
 - 在摆球落至最低点的时候，它损失了引力势能，接下来它将攀升确定的高度；

@@ -14,4 +14,4 @@ $$\Delta{y}=v_y\Delta{t}$$
 
 $$\Delta{z}=v_z\Delta{t}$$
 
-![Fig.9-1 一个物体的一小段位移](/assets/volume-1/fig-9-1.png)
+![Fig.9-1 一个物体的一小段位移](/notes-of-feynman-lectures-on-physics/assets/volume-1/fig-9-1.png)
