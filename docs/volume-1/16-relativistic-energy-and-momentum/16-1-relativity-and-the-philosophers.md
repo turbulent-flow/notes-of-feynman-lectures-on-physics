@@ -1,3 +1,9 @@
+---
+layout: default
+title: 16-1 Relativity and the Philosophers
+parent: 16. Relativistic Energy and Momentum
+nav_order: 1
+---
 在这一章节，我们会继续讨论爱因斯坦和庞加莱的相对论原理，因为它影响了我们的物理观点以及人类思想的其他分支。
 
 庞加莱做出了下面的论述：“根据相对论原理，不管是对于固定的观测者，还是对于相对他做着匀速、不变方向的运动的观测者，物理现象的定律必然是一样的，所以我们没法，也不可能意识到我们是否跟随这样的运动。”

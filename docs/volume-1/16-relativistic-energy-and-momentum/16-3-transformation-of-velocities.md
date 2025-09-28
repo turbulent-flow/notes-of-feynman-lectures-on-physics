@@ -1,3 +1,9 @@
+---
+layout: default
+title: 16-3 Transformation of Velocities
+parent: 16. Relativistic Energy and Momentum
+nav_order: 3
+---
 爱因斯坦相对论与牛顿相对论的主要区别在于在相对移动的系统之间关联坐标系与时间的变换定律不一样。正确的洛伦兹的变换定律是
 
 $$
@@ -72,4 +78,4 @@ $$y=y'=v_{y'}t'$$
 
 $$v_{y'}=\frac{y}{t}=v_{y'}\sqrt{1-u^2/c^2}$$
 
-因此一边的速度不再是 $v_{y'}$ ，而是 $v_{y'}\sqrt{1-u^2/c^2}$ 。我们通过替换、合并变换等式，得到了这个结果，我们也可以从相对论原理中直接看到该结果，出于下列的原因（经常回过头去看看我们是否能发现原因是一件很棒的事情）。我们已经看到（[Fig.15-3]({{"/volume-1/15-the-special-theory-of-relativity/15-4-transformation-of-time.html#fig-15-3"|relative_url}})）一个时钟在它移动时是如何工作的；在固定的系统中，光看起来以速率 $c$ 沿着一个角度运动，同时，在移动的系统中，它以相同的速率做着垂直运动。我们发现在固定系统中速度的垂直部分比光速小，因子是 $\sqrt{1-u^2/c^2}$ （[Eq.15.3]({{"/volume-1/15-the-special-theory-of-relativity/15-2-the-lorentz-transformation.html#eq-15-3"|relative_url}})）。但是现在假设我们让一个粒子在这个相同的“时钟”里循环往复地运动，以光速的 $1/n$ （Fig.16-1）。
+因此一边的速度不再是 $v_{y'}$ ，而是 $v_{y'}\sqrt{1-u^2/c^2}$ 。我们通过替换、合并变换等式，得到了这个结果，我们也可以从相对论原理中直接看到该结果，出于下列的原因（经常回过头去看看我们是否能发现原因是一件很棒的事情）。我们已经看到（[Fig.15-3]({{ "/volume-1/15-the-special-theory-of-relativity/15-4-transformation-of-time.html#fig-15-3" | relative_url }})）一个时钟在它移动时是如何工作的；在固定的系统中，光看起来以速率 $c$ 沿着一个角度运动，同时，在移动的系统中，它以相同的速率做着垂直运动。我们发现在固定系统中速度的垂直部分比光速小，因子是 $\sqrt{1-u^2/c^2}$ （[Eq.15.3]({{ "/volume-1/15-the-special-theory-of-relativity/15-2-the-lorentz-transformation.html#eq-15-3" | relative_url }})）。但是现在假设我们让一个粒子在这个相同的“时钟”里循环往复地运动，以光速的 $1/n$ （Fig.16-1）。
