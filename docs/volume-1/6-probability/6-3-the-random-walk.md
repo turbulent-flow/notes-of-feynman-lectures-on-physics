@@ -6,7 +6,7 @@ nav_order: 3
 ---
 这里有另一个有趣的问题，包含概率的知识——随机游走。与抛掷硬币相似，每次游走仅仅会出现两种可能的结果，要么是向前走（假设起始位置为 x，该次距离的变化为 toward + x），要么是向后走（toward - x）。这类通用的问题涉及到气体中的原子运动——布朗运动以及测量中的误差融合。
 
-![随机游走的进程图](/notes-of-feynman-lectures-on-physics/assets/volume-1/fig-6-5.png)
+![随机游走的进程图]({{"/assets/volume-1/fig-6-5.png"|relative_url}})
 
 - 水平轴 N 表示整体步数；
 - 垂直轴 $D_N$ 表示距离起始位置的净距离；
@@ -51,7 +51,7 @@ $$\frac{\langle{N_H}\rangle{}}{N} = 0.5$$
 我们也预期真实的 $N_H$ 较 $\frac{N}{2}$ 偏差大约为 $\frac{1}{2}\sqrt{N}$ ，或者离差的占比为：
 $$\frac{1}{N}\frac{\sqrt{N}}{2} = \frac{1}{2\sqrt{N}}$$
 
-![一个便士在特定连续的N次抛掷中出现正面的次数占比的视图](/notes-of-feynman-lectures-on-physics/assets/volume-1/fig-6-6.png)
+![一个便士在特定连续的N次抛掷中出现正面的次数占比的视图]({{"/assets/volume-1/fig-6-6.png"|relative_url}})
 
 从图中我们可以看到 N 越大越接近我们的预期—— $\frac{N_H}{N}$ 为 $\frac{1}{2}$ 。但是我们也看到观察到的离差无法契合我们预期的离差，我们只能说如果离差接近 $1/2\sqrt{N}$ （within a factor of 2 or 3），我们没有理由怀疑硬币的“诚实性”，如果结果偏差很大，我可以认为硬币是“不公平的”，但是我们无法证明。
 

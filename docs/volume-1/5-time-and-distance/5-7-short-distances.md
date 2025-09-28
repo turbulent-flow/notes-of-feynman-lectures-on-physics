@@ -12,7 +12,7 @@ $$\sigma = \pi r^2$$
 
 那么如何测量原子核的截面呢？
 
-![想象的碳板视图](/notes-of-feynman-lectures-on-physics/assets/volume-1/fig-5-10.png)
+![想象的碳板视图]({{"/assets/volume-1/fig-5-10.png"|relative_url}})
 - 我们可以想象一下，上图是一个由碳的原子核组成的薄板，厚约 1 厘米左右，大约有 $10^8$ 个原子层；
 - 因为原子核足够的小，所以不可能存在任意一个原子核会被前面的其他原子核挡住的情况；
 - 如果我们把一束光沿着碳板平面的垂直方向射进去，部分粒子能够顺利穿过碳板，而另一部分则会被碳板上的原子核拦截；
@@ -31,7 +31,7 @@ $$\pi r^2 = \sigma = \frac{A (n_1 - n_2)}{N n_1}$$
 这个问题目前无法回答，也许要等到我们破解了神秘的原子核之力，它会对我们关于空间、测量的概念进行修正。
 
 ## 定义距离的标准单位
-![选定的谱线](/notes-of-feynman-lectures-on-physics/assets/volume-1/fig-spectral-line.png)
+![选定的谱线]({{"/assets/volume-1/fig-spectral-line.png"|relative_url}})
 
 距离的标准单位现在确定为一个选定的谱线的波长的随机数。
 

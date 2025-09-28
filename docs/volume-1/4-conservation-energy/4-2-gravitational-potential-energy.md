@@ -7,7 +7,7 @@ nav_order: 2
 自然的法则可以从一些事实和封闭的逻辑推导当中提炼出来。
 
 ## 一个简单的杠杆装置
-![Fig.4-1 简单的杠杆装置](/notes-of-feynman-lectures-on-physics/assets/volume-1/fig-4-1.png)
+![Fig.4-1 简单的杠杆装置]({{"/assets/volume-1/fig-4-1.png"|relative_url}})
 
 - 永动机并不存在，它是一个理想的装置，不需要借助外部的能量就能够保持自身地持续运转；
 - 如图所示的装置可以被认为是一个可逆的装置，三单位重量的物体可以举起一单位重量的物体，那么反过来，一单位重量的物体可以举起三单位重量的物体；需要注意可逆的装置与永动机一样是想象出来，它是最有效的，因为现实的装置普遍都存在能量损耗的问题；
@@ -15,7 +15,7 @@ nav_order: 2
 - 所有的可逆的装置举起物体的高度都是一样的，我们不需要关心其内部的细节。
 
 ## 一个稍微复杂点的可逆的装置
-![Fig.4-2 稍微复杂点的可逆的装置](/notes-of-feynman-lectures-on-physics/assets/volume-1/fig-4-2.png)
+![Fig.4-2 稍微复杂点的可逆的装置]({{"/assets/volume-1/fig-4-2.png"|relative_url}})
 
 经过一系列的操作，我们发现：
 - 1 英尺 = 3 X
@@ -25,18 +25,18 @@ nav_order: 2
 - 势能是物体在当前位置相对于其他位置所拥有的能量。
 
 ## 直角三角形加滑轮的装置
-![Fig.4-3 倾斜的装置](/notes-of-feynman-lectures-on-physics/assets/volume-1/fig-4-3.png)
+![Fig.4-3 倾斜的装置]({{"/assets/volume-1/fig-4-3.png"|relative_url}})
 
 一个重量为 W 的物体下滑 5 英尺，举起了 1 英镑的物体 3 英尺，它们处于平衡的状态，我可以发现：
 - W = 3 / 5 英镑
 
-![Fig.4-4 摘自 Stevinus 的墓志铭](/notes-of-feynman-lectures-on-physics/assets/volume-1/fig-4-4.png)
+![Fig.4-4 摘自 Stevinus 的墓志铭]({{"/assets/volume-1/fig-4-4.png"|relative_url}})
 
 上图更加直观，左边三个链珠的拉力与右边五个链珠的拉力持平——整体处于平衡状态，不管余下链珠的占比如何。
 
 ## 另外两个较为复杂的可逆的装置
 ### 大螺丝
-![Fig.4-5 大螺丝](/notes-of-feynman-lectures-on-physics/assets/volume-1/fig-4-5.png)
+![Fig.4-5 大螺丝]({{"/assets/volume-1/fig-4-5.png"|relative_url}})
 
 前置描述：
 - 一个长柄 20 英寸，用于旋转螺丝；
@@ -54,7 +54,7 @@ nav_order: 2
 - 代入公式，计算出 W 约为 1.6 英镑。
 
 ### 滑轮加多个物体
-![Fig.4-6 滑轮加多个物体](/notes-of-feynman-lectures-on-physics/assets/volume-1/fig-4-6.png)
+![Fig.4-6 滑轮加多个物体]({{"/assets/volume-1/fig-4-6.png"|relative_url}})
 
 前置描述：
 - 一个长条的一端被固定，该端点被称之为支点，长条的长度为 8 英寸；

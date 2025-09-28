@@ -72,13 +72,13 @@ $$\boldsymbol{C}_i=-Gm_i\boldsymbol{r}_i/r^3$$
 
 $$\boldsymbol{C}=\boldsymbol{C}_1+\boldsymbol{C}_2+\boldsymbol{C}_3+\cdots$$
 
-在第九章，处理行星运动的问题，本质上使用的是这个定律。我们简单地把所有的作用力向量相加，就能得到一个行星上的全部作用力。如果我们除以行星的质量，就得到 Eq.[12.10](/notes-of-feynman-lectures-on-physics/volume-1/12-characteristics-of-force/12-4-fundamental-forces-fields.html#eq-12-10)。
+在第九章，处理行星运动的问题，本质上使用的是这个定律。我们简单地把所有的作用力向量相加，就能得到一个行星上的全部作用力。如果我们除以行星的质量，就得到 Eq.[12.10]({{"/volume-1/12-characteristics-of-force/12-4-fundamental-forces-fields.html#eq-12-10"|relative_url}})。
 
-等式 [12.6](/notes-of-feynman-lectures-on-physics/volume-1/12-characteristics-of-force/12-4-fundamental-forces-fields.html#eq-12-6)和 [12.10](/notes-of-feynman-lectures-on-physics/volume-1/12-characteristics-of-force/12-4-fundamental-forces-fields.html#eq-12-10) 反应出场的叠加原理。该原理表明由所有源导致的全部场是每个源导致的场之和。迄今为止，对于电，这是一条绝对有保障的定律，即使作用力定律由于电荷的运动变得复杂也没错。这儿有明显的冲突，但是经过仔细地分析，我们发现那是由于忽略了电荷的移动造成的。虽然叠加原理完全适用带电的作用力，它并不适用引力如果力场太强的话，牛顿等式 [12.10](/notes-of-feynman-lectures-on-physics/volume-1/12-characteristics-of-force/12-4-fundamental-forces-fields.html#eq-12-10) 是近似的，根据爱因斯坦的引力理论。
+等式 [12.6]({{"/volume-1/12-characteristics-of-force/12-4-fundamental-forces-fields.html#eq-12-6"|relative_url}})和 [12.10]({{"/volume-1/12-characteristics-of-force/12-4-fundamental-forces-fields.html#eq-12-10"|relative_url}}) 反应出场的叠加原理。该原理表明由所有源导致的全部场是每个源导致的场之和。迄今为止，对于电，这是一条绝对有保障的定律，即使作用力定律由于电荷的运动变得复杂也没错。这儿有明显的冲突，但是经过仔细地分析，我们发现那是由于忽略了电荷的移动造成的。虽然叠加原理完全适用带电的作用力，它并不适用引力如果力场太强的话，牛顿等式 [12.10]({{"/volume-1/12-characteristics-of-force/12-4-fundamental-forces-fields.html#eq-12-10"|relative_url}}) 是近似的，根据爱因斯坦的引力理论。
 
 与带电的作用力紧密相关的是另一种，叫做磁力，它也可以用场来分析。带电的作用力与磁力之间的某些非量化关系可以由一个阴极射线管的实验（fig.12-3）表述。在管子的一端有一处源释放出电子。在里面有一处装置用于加速电子，把它们中的一些以一束射线打到另一端的荧光屏上。一个光斑出现在屏幕中心，这使得我们可以追踪电子的路径。在抵达屏幕的路上，电子束通过一段狭窄的空间，那是一对水平放置的金属片。电压可以加到金属片上，所以任一片儿都能被弄成负的。当开启电压，金属片之间存在电场。
 
-![一个阴极射线管](/notes-of-feynman-lectures-on-physics/assets/volume-1/fig-12-3.png)
+![一个阴极射线管]({{"/assets/volume-1/fig-12-3.png"|relative_url}})
 
 实验的第一个部分是把一个负电压加在下面的金属片上，也就是额外的电子被放置在下面的金属片上。因为电荷互斥，屏幕上的光斑立马上扬（我们可以换一种方式说，电子“感受到”场，通过向上改变来回应）。接下来我们反转电压，把上面的金属片弄成负的。屏幕上的光斑现在跳到了下面，表明电子束被它上面的金属片的电子排斥（我们也可以说，电子为了“响应”场，变了方向）。
 
