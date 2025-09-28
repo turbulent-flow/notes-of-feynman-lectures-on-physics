@@ -5,5 +5,5 @@ parent: Volume 1
 nav_order: 9
 has_children: true
 ---
-# 9. Newton's Laws of Dynamics
+## 9. Newton's Laws of Dynamics
 
