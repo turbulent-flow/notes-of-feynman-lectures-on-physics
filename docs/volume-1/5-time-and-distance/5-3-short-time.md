@@ -7,8 +7,8 @@ nav_order: 3
 如果装置“摆”在一小时内摆动了 3600 次（假设一天有24个小时），我们可以称“摆”的周期为 1 秒，我们大约把原始的时间单位（一天）大约拆分了 10<sup>-5</sup> 倍。
 
 ## 再往下拆需要使用电子震荡器
-![电子震荡器 a](/notes-of-feynman-lectures-on-physics/assets/volume-1/fig-5-2-a.png)
-![电子震荡器 b](/notes-of-feynman-lectures-on-physics/assets/volume-1/fig-5-2-b.png)
+![电子震荡器 a]({{"/assets/volume-1/fig-5-2-a.png"|relative_url}})
+![电子震荡器 b]({{"/assets/volume-1/fig-5-2-b.png"|relative_url}})
 
 上面是两个电子震荡器的呈像，b 的周期是 a 的十分之一。
 

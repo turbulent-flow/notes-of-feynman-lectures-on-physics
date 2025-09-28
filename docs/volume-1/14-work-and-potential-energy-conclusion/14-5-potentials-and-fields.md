@@ -28,7 +28,7 @@ $$
 
 $$\Psi(p)=\sum_i -\frac{Gm_i}{r_{ip}},\quad i=1,2,...$$
 
-![由一个半径为 a 的球壳所产生的势](/notes-of-feynman-lectures-on-physics/assets/volume-1/fig-14-4.png)
+![由一个半径为 a 的球壳所产生的势]({{"/assets/volume-1/fig-14-4.png"|relative_url}})
 
 在上一章节，我们使用过这个公式，势是来自所有的不同物体的势的和，可以通过把在一个点处由壳的所有的部分所产生的势相加，求得由一个球壳所产生的势。这个计算的结果如图 14-4 所示。它是负的，在 $r=\infty$ 处为零，随着 $1/r$ 变化，向下，直到半径 $a$ ，然后在壳的内部恒定。在壳的外部，势是 $-\frac{Gm}{r}$ ，其中 m 是壳的质量，这跟把所有质量聚集于中心是一样的。但是并不是每一处都完全相同，在壳的内部势是 $-\frac{Gm}{a}$ ，它是恒定的！当势是恒定的，没有场，或者当势能是恒定的，没有作用力，因为从一个地方移动物体到另一个地方，在球的内部，由作用力所做的功是零。为什么？因为从一个地方移动物体到另一个地方所做的功等于负的势能的变化（或者，相对应的场积分是势的变化）。在内部任意两点处的势能是一样的，势能的变化为零，因此在壳的内部，在任意的两点之间移动不做功。对于所有方向上的位移，功是零，只有一种可能，那就是在那儿根本没有作用力。
 
@@ -44,7 +44,7 @@ $$\Delta{W}=-\Delta{U}=F_x\Delta{x}$$
 
 $$F_x=-\Delta{U}/\Delta{x}$$
 
-当然这是不准确的。我们真正想要的是 ([14.10](/notes-of-feynman-lectures-on-physics/volume-1/14-work-and-potential-energy-conclusion/14-5-potentials-and-fields.html#eq-14-10)) 的极限，随着 $\Delta{x}$ 变得越来越小，因为只有在非常小的 $\Delta{x}$ 的极限中，它才是正确的。我们意识到这是 $U$ 相对于 $x$ 的导数，我们更愿意把它写作 $-dU/dx$ 。但是 $U$ 取决于 $(x,y,z)$ ，数学家发明了一个不同的符号，来提醒我们要非常地小心，当我们在求导这样的函数时，以便于我们牢记我们只考虑 $x$ 改变， $y$ 和 $z$ 不会改变。不是 $d$ ，而是一个“反向6”，或者 $\partial$ 。（ $\partial$ 应该从微积分一开始就被使用，因为我们总是想取消 $d$ ，但是我们从未想取消 $\partial$ ！）所以他们写作 $\partial{U}/\partial{x}$ ，更进一步，出于强迫症，如果他们想非常地认真，会在它旁边划条线，在底部写小的 $yz$ （ $\partial{U}/\partial{xyz}$ ），这表示“ $U$ 相对于 $x$ 的导数，保持 $y$ 和 $z$ 恒定。”大多数时候，我们不会写标记，关于保持谁恒定，因为可以从上下文读出，所以我们一般不会使用 $y$ 和 $z$ 的划线。总是使用 $\partial$ ，而不是 $d$ ，作为一个警告，它是一个涉及保持某些其他变量恒定的导数。这被称之为偏导数；它是一个我们只改变 $x$ 的导数。
+当然这是不准确的。我们真正想要的是 ([14.10]({{"/volume-1/14-work-and-potential-energy-conclusion/14-5-potentials-and-fields.html#eq-14-10"|relative_url}})) 的极限，随着 $\Delta{x}$ 变得越来越小，因为只有在非常小的 $\Delta{x}$ 的极限中，它才是正确的。我们意识到这是 $U$ 相对于 $x$ 的导数，我们更愿意把它写作 $-dU/dx$ 。但是 $U$ 取决于 $(x,y,z)$ ，数学家发明了一个不同的符号，来提醒我们要非常地小心，当我们在求导这样的函数时，以便于我们牢记我们只考虑 $x$ 改变， $y$ 和 $z$ 不会改变。不是 $d$ ，而是一个“反向6”，或者 $\partial$ 。（ $\partial$ 应该从微积分一开始就被使用，因为我们总是想取消 $d$ ，但是我们从未想取消 $\partial$ ！）所以他们写作 $\partial{U}/\partial{x}$ ，更进一步，出于强迫症，如果他们想非常地认真，会在它旁边划条线，在底部写小的 $yz$ （ $\partial{U}/\partial{xyz}$ ），这表示“ $U$ 相对于 $x$ 的导数，保持 $y$ 和 $z$ 恒定。”大多数时候，我们不会写标记，关于保持谁恒定，因为可以从上下文读出，所以我们一般不会使用 $y$ 和 $z$ 的划线。总是使用 $\partial$ ，而不是 $d$ ，作为一个警告，它是一个涉及保持某些其他变量恒定的导数。这被称之为偏导数；它是一个我们只改变 $x$ 的导数。
 
 因此我们发现在 x-方向上的作用力是负的 $U$ 相对于 $x$ 的偏导数：
 
@@ -76,9 +76,9 @@ $$
 
 $$\boldsymbol{F}=-\nabla U,\quad \boldsymbol{C}=-\nabla \Psi$$
 
-使用 $\nabla$ 可以让我们快速地测试我们是否真的有一个向量等式，但是等式 [14.14](/notes-of-feynman-lectures-on-physics/volume-1/14-work-and-potential-energy-conclusion/14-5-potentials-and-fields.html#ea-14-14) 实际上与等式 [14.11](/notes-of-feynman-lectures-on-physics/volume-1/14-work-and-potential-energy-conclusion/14-5-potentials-and-fields.html#eq-14-11)、[14.12](/notes-of-feynman-lectures-on-physics/volume-1/14-work-and-potential-energy-conclusion/14-5-potentials-and-fields.html#eq-14-12)、[14.13](/notes-of-feynman-lectures-on-physics/volume-1/14-work-and-potential-energy-conclusion/14-5-potentials-and-fields.html#eq-14-13) 完全相同；它只是书写它们的另一种方式，因为我们不想每次都写三遍等式，所以我们写作 $\nabla U$ 。
+使用 $\nabla$ 可以让我们快速地测试我们是否真的有一个向量等式，但是等式 [14.14]({{"/volume-1/14-work-and-potential-energy-conclusion/14-5-potentials-and-fields.html#ea-14-14"|relative_url}}) 实际上与等式 [14.11]({{"/volume-1/14-work-and-potential-energy-conclusion/14-5-potentials-and-fields.html#eq-14-11"|relative_url}})、[14.12]({{"/volume-1/14-work-and-potential-energy-conclusion/14-5-potentials-and-fields.html#eq-14-12"|relative_url}})、[14.13]({{"/volume-1/14-work-and-potential-energy-conclusion/14-5-potentials-and-fields.html#eq-14-13"|relative_url}}) 完全相同；它只是书写它们的另一种方式，因为我们不想每次都写三遍等式，所以我们写作 $\nabla U$ 。
 
-场和势的另一个示例是带电的情形。在电的例子中，在一个静止物体上的作用力是电荷乘以电场： $\boldsymbol{F}=q\boldsymbol{E}$ 。（通常，在带电问题中的作用力的 x-部分有一部分取决于磁场。从等式 [12.11](/notes-of-feynman-lectures-on-physics/volume-1/12-characteristics-of-force/12-4-fundamental-forces-fields.html#eq-12-11) 中可以很容易看出，在一个粒子上由磁场产生的作用力总是与它的速度垂直，也与场垂直。因为在一个移动电荷上由磁场产生的作用力垂直于速度，在移动电荷上的磁场不做功，因为运动垂直于作用力。因此，在电场和磁场的势能的理论计算中，我们可以忽略磁场的贡献，因为它不会改变势能。）假设我们只有电场。我们可以计算能量，或者做功，与计算引力相同，计算一个数值 $\phi$ ，它是负的 $\boldsymbol{E}\cdot d\boldsymbol{s}$ 的积分，从任意固定的点到我们做计算的点，那么在一个电场中的势能就是电荷乘以这个数值 $\phi$ ：
+场和势的另一个示例是带电的情形。在电的例子中，在一个静止物体上的作用力是电荷乘以电场： $\boldsymbol{F}=q\boldsymbol{E}$ 。（通常，在带电问题中的作用力的 x-部分有一部分取决于磁场。从等式 [12.11]({{"/volume-1/12-characteristics-of-force/12-4-fundamental-forces-fields.html#eq-12-11"|relative_url}}) 中可以很容易看出，在一个粒子上由磁场产生的作用力总是与它的速度垂直，也与场垂直。因为在一个移动电荷上由磁场产生的作用力垂直于速度，在移动电荷上的磁场不做功，因为运动垂直于作用力。因此，在电场和磁场的势能的理论计算中，我们可以忽略磁场的贡献，因为它不会改变势能。）假设我们只有电场。我们可以计算能量，或者做功，与计算引力相同，计算一个数值 $\phi$ ，它是负的 $\boldsymbol{E}\cdot d\boldsymbol{s}$ 的积分，从任意固定的点到我们做计算的点，那么在一个电场中的势能就是电荷乘以这个数值 $\phi$ ：
 
 $$
 \begin{align*}
@@ -87,7 +87,7 @@ U=q\phi
 \end{align*}
 $$
 
-![在平行的片儿之间的场](/notes-of-feynman-lectures-on-physics/assets/volume-1/fig-14-5.png)
+![在平行的片儿之间的场]({{"/assets/volume-1/fig-14-5.png"|relative_url}})
 
 我们举一个例子，两个平行的金属片儿，每一个的表面带有 $\pm\sigma$ 电荷，每单位范围。这被称之为平行电容。在片儿的外面，作用力为零，在它们之间，有一个恒定的电场，从 $+$ 导向 $-$ ，数值为 $\sigma/\epsilon_0$ （Fig.14-5）。我们想知道从一片儿携带一个电荷到另一片儿需要做多少功。功是 $(\boldsymbol{force})\cdot d\boldsymbol{s}$ 的积分，可以被写作电荷乘以在片儿 1 处的势的值减去在片儿 2 处的：
 

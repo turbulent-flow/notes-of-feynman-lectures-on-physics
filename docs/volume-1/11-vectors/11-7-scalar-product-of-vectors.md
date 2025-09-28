@@ -16,7 +16,7 @@ $$r^{'}=\sqrt{x^{'2}+y^{'2}+z^{'2}}$$
 
 $$x^2+y^2+z^2=x^{'2}+y^{'2}+z^{'2}$$
 
-如果我们替换等式 [11.5](/notes-of-feynman-lectures-on-physics/volume-1/11-vectors/11-3-rotations.html#eq-11-5)，我们会发现确实如此。我们看到存在着其他类型的等式，对于任意两个坐标系，它们是成立的。
+如果我们替换等式 [11.5]({{"/volume-1/11-vectors/11-3-rotations.html#eq-11-5"|relative_url}})，我们会发现确实如此。我们看到存在着其他类型的等式，对于任意两个坐标系，它们是成立的。
 
 某种新的东西被包含在内。我们可以生成一个新的数值，一个 x、y 和 z 的函数，被称之为标量函数，它没有方向，但在两个系统中都是一样的。我们可以从一个向量中产生一个标量。我们发现了一个通用的规则。很明显就是我们刚刚提到的：把部分的平方相加。现在让我们定义一个新的东西，我们称它为 $\boldsymbol{a} \cdot \boldsymbol{a}$ 。它不是一个向量，而是一个标量；它是一个数字，在所有的坐标系中都是相同的，它被定义为向量的三个部分的平方之和：
 
@@ -37,7 +37,7 @@ $$\boldsymbol{a} \cdot \boldsymbol{b}=a_xb_x+a_yb_y+a_zb_z$$
 
 $$(a_x+b_x)^2+(a_y+b_y)^2+(a_z+b_z)^2=(a_{x^{'}}+b_{x^{'}})^2+(a_{y^{'}}+b_{y^{'}})^2+(a_{z^{'}}+b_{z^{'}})^2$$
 
-如果等式的两边都展开的话，会有等式 [11.19](/notes-of-feynman-lectures-on-physics/volume-1/11-vectors/11-7-scalar-product-of-vectors.html#eq-11-19) 中出现的叉积，也会有 $\boldsymbol{a}$ 和 $\boldsymbol{b}$ 部分的平方之和。等式 [11.18](/notes-of-feynman-lectures-on-physics/volume-1/11-vectors/11-7-scalar-product-of-vectors.html#eq-11-18) 中的元素不会改变，剩下的叉积元素（[11.19](/notes-of-feynman-lectures-on-physics/volume-1/11-vectors/11-7-scalar-product-of-vectors.html#eq-11-19)）也不会改变。
+如果等式的两边都展开的话，会有等式 [11.19]({{"/volume-1/11-vectors/11-7-scalar-product-of-vectors.html#eq-11-19"|relative_url}}) 中出现的叉积，也会有 $\boldsymbol{a}$ 和 $\boldsymbol{b}$ 部分的平方之和。等式 [11.18]({{"/volume-1/11-vectors/11-7-scalar-product-of-vectors.html#eq-11-18"|relative_url}}) 中的元素不会改变，剩下的叉积元素（[11.19]({{"/volume-1/11-vectors/11-7-scalar-product-of-vectors.html#eq-11-19"|relative_url}})）也不会改变。
 
 数值 $\boldsymbol{a} \cdot \boldsymbol{b}$ 被称之为两个向量的标量乘积，它拥有蛮多好玩且有用的属性。譬如，很容易证明：
 
@@ -45,7 +45,7 @@ $$(a_x+b_x)^2+(a_y+b_y)^2+(a_z+b_z)^2=(a_{x^{'}}+b_{x^{'}})^2+(a_{y^{'}}+b_{y^{'
 
 $$\boldsymbol{a} \cdot (\boldsymbol{b}+\boldsymbol{c})=\boldsymbol{a} \cdot \boldsymbol{b}+\boldsymbol{a} \cdot \boldsymbol{c}$$
 
-同样地，有一个简单的几何方式去计算 $\boldsymbol{a} \cdot \boldsymbol{b}$ ，而不用计算 $\boldsymbol{a}$ 和 $\boldsymbol{b}$ 的部分： $\boldsymbol{a} \cdot \boldsymbol{b}$ 是 $\boldsymbol{a}$ 的长度与 $\boldsymbol{b}$ 的长度的乘积乘以它们之间夹角的余弦。为什么？假设我们选择了一个特别的坐标系，其中 x-轴坐落在 $\boldsymbol{a}$ 上；在那些情形中，仅有的 $\boldsymbol{a}$ 的部分是 $a_x$ ，那么它的长度当然是整个 $\boldsymbol{a}$ 的。因此等式 [11.19](/notes-of-feynman-lectures-on-physics/volume-1/11-vectors/11-7-scalar-product-of-vectors.html#eq-11-19) 简化为 $\boldsymbol{a} \cdot \boldsymbol{b}=a_xb_x$ ，也就是， $\boldsymbol{a}$ 的长度乘以 $\boldsymbol{b}$ 在 $\boldsymbol{a}$ 的方向上的部分， $b\cos{\theta}$ :
+同样地，有一个简单的几何方式去计算 $\boldsymbol{a} \cdot \boldsymbol{b}$ ，而不用计算 $\boldsymbol{a}$ 和 $\boldsymbol{b}$ 的部分： $\boldsymbol{a} \cdot \boldsymbol{b}$ 是 $\boldsymbol{a}$ 的长度与 $\boldsymbol{b}$ 的长度的乘积乘以它们之间夹角的余弦。为什么？假设我们选择了一个特别的坐标系，其中 x-轴坐落在 $\boldsymbol{a}$ 上；在那些情形中，仅有的 $\boldsymbol{a}$ 的部分是 $a_x$ ，那么它的长度当然是整个 $\boldsymbol{a}$ 的。因此等式 [11.19]({{"/volume-1/11-vectors/11-7-scalar-product-of-vectors.html#eq-11-19"|relative_url}}) 简化为 $\boldsymbol{a} \cdot \boldsymbol{b}=a_xb_x$ ，也就是， $\boldsymbol{a}$ 的长度乘以 $\boldsymbol{b}$ 在 $\boldsymbol{a}$ 的方向上的部分， $b\cos{\theta}$ :
 
 $$\boldsymbol{a} \cdot \boldsymbol{b}=ab\cos{\theta}$$
 

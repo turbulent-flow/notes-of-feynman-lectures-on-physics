@@ -32,7 +32,7 @@ $$
 
 $$x'=v_{x'}t'$$
 
-现在我们只需要计算由外面观测者所看到的一个物体的位置与时间是多少，这个物体拥有关系式 [16.2](/notes-of-feynman-lectures-on-physics/docs/volume-1/16-relativistic-energy-and-momentum/16-3-transformation-of-velocities.html#eq-16-2)，它包含 $x'$ 和 $t'$ 。所以我们简单地把 [16.3](/notes-of-feynman-lectures-on-physics/docs/volume-1/16-relativistic-energy-and-momentum/16-3-transformation-of-velocities.html#eq-16-3) 代入到 [16.2](/notes-of-feynman-lectures-on-physics/docs/volume-1/16-relativistic-energy-and-momentum/16-3-transformation-of-velocities.html#eq-16-2)，得到
+现在我们只需要计算由外面观测者所看到的一个物体的位置与时间是多少，这个物体拥有关系式 [16.2]({{"/volume-1/16-relativistic-energy-and-momentum/16-3-transformation-of-velocities.html#eq-16-2"|relative_url}})，它包含 $x'$ 和 $t'$ 。所以我们简单地把 [16.3]({{"/volume-1/16-relativistic-energy-and-momentum/16-3-transformation-of-velocities.html#eq-16-3"|relative_url}}) 代入到 [16.2]({{"/volume-1/16-relativistic-energy-and-momentum/16-3-transformation-of-velocities.html#eq-16-2"|relative_url}})，得到
 
 ##### eq-16-4
 
@@ -72,4 +72,4 @@ $$y=y'=v_{y'}t'$$
 
 $$v_{y'}=\frac{y}{t}=v_{y'}\sqrt{1-u^2/c^2}$$
 
-因此一边的速度不再是 $v_{y'}$ ，而是 $v_{y'}\sqrt{1-u^2/c^2}$ 。我们通过替换、合并变换等式，得到了这个结果，我们也可以从相对论原理中直接看到该结果，出于下列的原因（经常回过头去看看我们是否能发现原因是一件很棒的事情）。我们已经看到（[Fig.15-3](/docs/volume-1/15-the-special-theory-of-relativity/15-4-transformation-of-time.md#fig-15-3)）一个时钟在它移动时是如何工作的；在固定的系统中，光看起来以速率 $c$ 沿着一个角度运动，同时，在移动的系统中，它以相同的速率做着垂直运动。我们发现在固定系统中速度的垂直部分比光速小，因子是 $\sqrt{1-u^2/c^2}$ （[Eq.15.3](/docs/volume-1/15-the-special-theory-of-relativity/15-2-the-lorentz-transformation.md#eq-15-3)）。但是现在假设我们让一个粒子在这个相同的“时钟”里循环往复地运动，以光速的 $1/n$ （Fig.16-1）。
+因此一边的速度不再是 $v_{y'}$ ，而是 $v_{y'}\sqrt{1-u^2/c^2}$ 。我们通过替换、合并变换等式，得到了这个结果，我们也可以从相对论原理中直接看到该结果，出于下列的原因（经常回过头去看看我们是否能发现原因是一件很棒的事情）。我们已经看到（[Fig.15-3]({{"/volume-1/15-the-special-theory-of-relativity/15-4-transformation-of-time.html#fig-15-3"|relative_url}})）一个时钟在它移动时是如何工作的；在固定的系统中，光看起来以速率 $c$ 沿着一个角度运动，同时，在移动的系统中，它以相同的速率做着垂直运动。我们发现在固定系统中速度的垂直部分比光速小，因子是 $\sqrt{1-u^2/c^2}$ （[Eq.15.3]({{"/volume-1/15-the-special-theory-of-relativity/15-2-the-lorentz-transformation.html#eq-15-3"|relative_url}})）。但是现在假设我们让一个粒子在这个相同的“时钟”里循环往复地运动，以光速的 $1/n$ （Fig.16-1）。

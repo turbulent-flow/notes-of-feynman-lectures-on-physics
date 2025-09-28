@@ -36,9 +36,9 @@ $$F_{z^{'}}=F_z$$
 
 这些是由乔和莫所看到的数值之间的关系。
 
-![两个平行的坐标系](/notes-of-feynman-lectures-on-physics/assets/volume-1/fig-11-1.png)
+![两个平行的坐标系]({{"/assets/volume-1/fig-11-1.png"|relative_url}})
 
-问题是，如果乔知道牛顿定律，那么如果莫尝试写出牛顿定律，它们也会是正确的吗？我们从不同的原点测量会有区别吗？换句话说，假设等式 [11.1](/notes-of-feynman-lectures-on-physics/volume-1/11-vectors/11-2-translations.html#eq-11-1) 是正确的，等式 [11.2](/notes-of-feynman-lectures-on-physics/volume-1/11-vectors/11-2-translations.html#eq-11-2) 和 [11.3](/notes-of-feynman-lectures-on-physics/volume-1/11-vectors/11-2-translations.html#eq-11-3) 给出了测量的关系，那么下面的等式是正确的吗？
+问题是，如果乔知道牛顿定律，那么如果莫尝试写出牛顿定律，它们也会是正确的吗？我们从不同的原点测量会有区别吗？换句话说，假设等式 [11.1]({{"/volume-1/11-vectors/11-2-translations.html#eq-11-1"|relative_url}}) 是正确的，等式 [11.2]({{"/volume-1/11-vectors/11-2-translations.html#eq-11-2"|relative_url}}) 和 [11.3]({{"/volume-1/11-vectors/11-2-translations.html#eq-11-3"|relative_url}}) 给出了测量的关系，那么下面的等式是正确的吗？
 
 ##### eq-11-4
 
@@ -60,11 +60,11 @@ $$dx^{'}/dt=dx/dt$$
 
 $$d^2x^{'}/dt^2=d^2x/dt^2$$
 
-因此等式 [11.4a](/notes-of-feynman-lectures-on-physics/volume-1/11-vectors/11-2-translations.html#eq-11-4) 变为
+因此等式 [11.4a]({{"/volume-1/11-vectors/11-2-translations.html#eq-11-4"|relative_url}}) 变为
 
 $$m(d^2x/dt^2)=F_{x^{'}}$$
 
-（我们也假设由乔和莫测量的质量是相等的。）因此加速度乘以质量与另一个人得到的是相同的。我们已找到公式 $F_{x^{'}}$ ，通过等式 [11.1](/notes-of-feynman-lectures-on-physics/volume-1/11-vectors/11-2-translations.html#eq-11-1) 进行替换，我们发现
+（我们也假设由乔和莫测量的质量是相等的。）因此加速度乘以质量与另一个人得到的是相同的。我们已找到公式 $F_{x^{'}}$ ，通过等式 [11.1]({{"/volume-1/11-vectors/11-2-translations.html#eq-11-1"|relative_url}}) 进行替换，我们发现
 
 $$F_{x^{'}}=F_x$$
 
