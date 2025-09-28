@@ -12,13 +12,13 @@ nav_order: 2
 
 这个一维的情况很容易处理，因为我们知道在动能中的变化等于从运动的一端到另一端的 $-GMm/r^2$ 乘以位移 $dr$ 的积分：
 
-##### eq-13-11
+### eq-13-11
 
 $$T_2-T_1=-\int_1^2GMm\frac{dr}{r^2}$$
 
 这个例子不存在余弦，因为作用力与位移都在同一个方向上。很容易计算 $dr/r^2$ 的积分；结果是 $-1/r$ ，所以等式[13.11]({{"/volume-1/13-work-and-potential-energy-A/13-2-work-done-by-gravity.html#eq-13-11"|relative_url}})变为：
 
-##### eq-13-12
+### eq-13-12
 
 $$T_2-T_1=+GMm(\frac{1}{r_2}-\frac{1}{r_1})$$
 

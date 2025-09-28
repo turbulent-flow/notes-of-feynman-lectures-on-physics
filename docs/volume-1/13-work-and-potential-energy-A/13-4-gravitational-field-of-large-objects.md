@@ -16,7 +16,7 @@ $$dC_x=-G\mu 2\pi \rho\frac{d\rho a}{r^3}$$
 
 因为 $r^2=\rho^2+a^2$ ， $\rho d\rho=r dr$ ，所以
 
-##### eq-13-17
+### eq-13-17
 
 $$C_x=-2\pi G\mu a\int_a^{\infty}\frac{dr}{r^2}=-2\pi G\mu a(\frac{1}{a}-\frac{1}{\infty})=-2\pi G\mu$$
 

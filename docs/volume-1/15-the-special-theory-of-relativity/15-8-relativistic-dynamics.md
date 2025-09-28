@@ -10,7 +10,7 @@ $$\boldsymbol{F}=d(m\boldsymbol{v})/dt$$
 
 动量仍然是 $m\boldsymbol{v}$ ，但是当我们使用新 $m$ ，它变成
 
-##### eq-15-10
+### eq-15-10
 
 $$\boldsymbol{p}=m\boldsymbol{v}=\frac{m_0\boldsymbol{v}}{\sqrt{1-v^2/c^2}}$$
 
@@ -26,7 +26,7 @@ $$m_0(1-v^2/c^2)^{-1/2}=m_0(1+\frac{1}{2}v^2/c^2+\frac{3}{8}v^4/c^4+\cdots)$$
 
 我们可以从公式中很清楚地看到幂级数在迅速地收敛，当 $v$ 很小时，而且在前两个，或者前三个之后的元素很小。所以我们可以写作
 
-##### eq-15-11
+### eq-15-11
 
 $$m \cong m_0+\frac{1}{2}m_0v^2(\frac{1}{c^2})$$
 
