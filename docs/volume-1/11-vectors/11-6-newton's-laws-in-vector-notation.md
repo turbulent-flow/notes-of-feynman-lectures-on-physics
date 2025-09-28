@@ -6,11 +6,11 @@ nav_order: 6
 ---
 为了以向量的形式书写牛顿定律，我们还要再走一步，定义加速度向量。它是速度向量的时间导数，可以被简单地阐释为它的部分是 x、y 和 z 相对于 t 的二阶导数：
 
-##### eq-11-11
+### eq-11-11
 
 $$a=\frac{d\boldsymbol{v}}{dt}=(\frac{d}{dt})(\frac{d\boldsymbol{r}}{dt})=\frac{d^2\boldsymbol{r}}{dt^2}$$
 
-##### eq-11-12
+### eq-11-12
 
 $$a_x=\frac{dv_x}{dt}=\frac{d^2x}{dt^2}$$
 
@@ -20,11 +20,11 @@ $$a_z=\frac{dv_z}{dt}=\frac{d^2z}{dt^2}$$
 
 基于这个定义，牛顿定律可以写作：
 
-##### eq-11-13
+### eq-11-13
 
 $$m\boldsymbol{a}=\boldsymbol{F}$$
 
-##### eq-11-14
+### eq-11-14
 
 $$m(d^2\boldsymbol{r}/dt^2)=\boldsymbol{F}$$
 
@@ -40,7 +40,7 @@ $$\Delta{\boldsymbol{v}}_{\parallel}$$ ，
 
 沿着路径的切线方向，以及 $\Delta{\boldsymbol{v}}_{\perp}$ ，垂直于路径，如图 Fig.11-8 所示。相切于路径的加速度是，向量长度的改变，也就是，速率 $v$ 的改变：
 
-##### eq-11-15
+### eq-11-15
 
 $$a_{\parallel}=dv/dt$$
 

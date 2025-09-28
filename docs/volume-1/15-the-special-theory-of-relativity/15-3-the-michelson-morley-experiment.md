@@ -24,7 +24,7 @@ $$t_1+t_2=2Lc/(c^2-u^2)$$
 
 为了方便后面的时间比较，我们把它写作
 
-##### eq-15-4
+### eq-15-4
 
 $$t_1+t_2=\frac{2L/c}{1-u^2/c^2}$$
 
@@ -42,7 +42,7 @@ $$t_3=L/\sqrt{c^2-u^2}$$
 
 对于从 $C'$ 的返程，距离是相同的，就像我们在对称的图形中所看到的；因此返回的时间也是相同的，整体的时间是 $2t_3$ 。我们对它稍作修整
 
-##### eq-15-5
+### eq-15-5
 
 $$2t_3=\frac{2L}{\sqrt{c^2-u^2}}=\frac{2L/c}{\sqrt{1-u^2/c^2}}$$
 
@@ -54,13 +54,13 @@ $$2t_3=\frac{2L}{\sqrt{c^2-u^2}}=\frac{2L/c}{\sqrt{1-u^2/c^2}}$$
 
 迈克耳孙-莫雷的实验结果令人感到困惑和沮丧。第一个提出解决之道的是洛伦兹。他提出材料本身会缩小，当它们移动时，并且这种减少只会出现在运动的方向上，当它处于静止时，如果长度是 $L_0$ ，那么当它以速率 u 平行于它的长度运动时，新的长度，我们叫做 $L_{\parallel}$ （L-平行），它是
 
-##### ea-15-6
+### eq-15-6
 
 $$L_{\parallel}=L_0\sqrt{1-u^2/c^2}$$
 
 当这个修正被应用到迈克耳孙-莫雷干涉测量装置上，由 B 到 C 的距离不会改变，但是由 B 到 E 的距离缩减为 $L\sqrt{1-u^2/c^2}$ 。因此等式 [15.5]({{"/volume-1/15-the-special-theory-of-relativity/15-3-the-michelson-morley-experiment.html#eq-15-5"|relative_url}}) 不会改变，但是等式 [15.4]({{"/volume-1/15-the-special-theory-of-relativity/15-3-the-michelson-morley-experiment.html#eq-15-4"|relative_url}}) 的 L 必须根据等式 [15.6]({{"/volume-1/15-the-special-theory-of-relativity/15-3-the-michelson-morley-experiment.html#ea-15-6"|relative_url}}) 进行修正。当完成后，我们得到
 
-##### eq-15-7
+### eq-15-7
 
 $$t_1+t_2=\frac{(2L/c)\sqrt{1-u^2/c^2}}{1-u^2/c^2}=\frac{2L/c}{\sqrt{1-u^2/c^2}}$$
 

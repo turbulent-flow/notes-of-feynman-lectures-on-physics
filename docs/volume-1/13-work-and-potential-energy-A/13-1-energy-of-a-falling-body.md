@@ -10,7 +10,7 @@ nav_order: 1
 
 $$\frac{1}{2}mv^2+mgh=const$$
 
-##### eq-13-1
+### eq-13-1
 
 $$T+U=const$$
 
@@ -18,13 +18,13 @@ $$T+U=const$$
 
 根据牛顿第二定律，我们可以直观地得到动能是如何变化的，通过采用动能相对于时间的导数，再应用牛顿定律。当我们求导 $\frac{1}{2}mv^2$ 相对于时间，我们得到：
 
-##### eq-13-2
+### eq-13-2
 
 $$\frac{dT}{dt}=\frac{d}{dt}(\frac{1}{2}mv^2)=\frac{1}{2}m2v\frac{dv}{dt}=mv\frac{dv}{dt}$$
 
 因为 m 被认为是常数。根据牛顿第二定律， $m(dv/dt)=F$ ，所以：
 
-##### eq-13-3
+### eq-13-3
 
 $$dT/dt=Fv$$
 
@@ -54,25 +54,25 @@ $$T=\frac{1}{2}m(v_x^2+v_y^2+v_z^2)$$
 
 当我们求导它相对于时间，我们得到了三个恐怖的元素：
 
-##### eq-13-4
+### eq-13-4
 
 $$\frac{dT}{dt}=m(v_x\frac{dv_x}{dt}+v_y\frac{dv_y}{dt}+v_z\frac{dv_z}{dt})$$
 
 但是 $m(dv_x/dt)$ 是作用在物体上的在 x-方向上的力 $F_x$ 。因此等式 Fig.13.4 的右边是 $F_xv_x+F_yv_y+F_zv_z$ 。我们回忆一下向量分析，意识到它是 $\boldsymbol{F}\cdot \boldsymbol{v}$ ；因此
 
-##### eq-13-5
+### eq-13-5
 
 $$dT/dt=\boldsymbol{F}\cdot \boldsymbol{v}$$
 
 这个结果可以通过下面的方式更快地得到：如果 $\boldsymbol{a}$ 和 $\boldsymbol{b}$ 是两个向量，它们或许都依赖于时间，在通常情况中， $\boldsymbol{a}\cdot \boldsymbol{b}$ 的导数是 
 
-##### eq-13-6
+### eq-13-6
 
 $$d(\boldsymbol{a}\cdot \boldsymbol{b})/dt=\boldsymbol{a}\cdot (d\boldsymbol{b}/dt)+(d\boldsymbol{a}/dt)\cdot \boldsymbol{b}$$
 
 假设 $\boldsymbol{a}=\boldsymbol{b}=\boldsymbol{v}$ ，于是我们可以应用它：
 
-##### eq-13-7
+### eq-13-7
 
 $$\frac{d(\frac{1}{2}mv^2)}{dt}=\frac{d(\frac{1}{2}m\boldsymbol{v}\cdot \boldsymbol{v})}{dt}=m\frac{d\boldsymbol{v}}{dt}\cdot \boldsymbol{v}=\boldsymbol{F}\cdot \boldsymbol{v}=\boldsymbol{F}\cdot \frac{d\boldsymbol{s}}{dt}$$
 
@@ -80,19 +80,19 @@ $$\frac{d(\frac{1}{2}mv^2)}{dt}=\frac{d(\frac{1}{2}m\boldsymbol{v}\cdot \boldsym
 
 为了学习能量守恒，我们想要更加深入地分析。让我们估算在很短的时间 $dt$ 内动能的变化。如果我们把等式[13.7]({{"/volume-1/13-work-and-potential-energy-A/13-1-energy-of-a-falling-body.html#eq-13-7"|relative_url}})的两边都乘以 $dt$ ，我们发现在动能中的变化差是作用力“点”移动的距离差：
 
-##### eq13-8
+### eq13-8
 
 $$dT=\boldsymbol{F}\cdot d\boldsymbol{s}$$
 
 如果我们算积分，会得到：
 
-##### eq-13-9
+### eq-13-9
 
 $$\Delta{T}=\int_1^2\boldsymbol{F}\cdot d\boldsymbol{s}$$
 
 它意味着什么？它表示如果一个物体在一个作用力的影响下以任意的方式运动，沿着某个曲线路径，当它沿着曲线从一点移动到另外一点，那么在动能中的变化等于作用力沿着曲线的部分乘以位移差 $ds$ 的积分，从一点到另外一点所涉及的积分。这个积分也有一个名字；它被叫做由物体上的作用力所做的功。我们立马可以看到功率等于每秒的做功。我们也看到仅仅是在运动方向上的作用力的一个部分贡献了做的功。在我们简单的例子中，作用力仅仅是垂直的，仅有一个单独的部分， $F_z$ ，等于 $-mg$ 。不管这个物体在那些情景中如何的运动，比如在一个抛物线上坠落， $\boldsymbol{F}\cdot \boldsymbol{s}$ ，可以被写作 $F_xdx+F_ydy+F_zdz$ ，什么都没留下，除了 $F_zdz=-mgdz$ ，因为作用力的其他部分都是零。因此，
 
-##### eq-13-10
+### eq-13-10
 
 $$\int_1^2\boldsymbol{F}\cdot d\boldsymbol{s}=\int_{z_1}^{z_2}-mgdz=-mg(z_2-z_1)$$
 

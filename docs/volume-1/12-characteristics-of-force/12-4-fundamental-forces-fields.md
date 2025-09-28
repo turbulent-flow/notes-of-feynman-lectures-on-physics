@@ -24,13 +24,13 @@ $$\boldsymbol{F}=q_1q_2\boldsymbol{r}/4\pi\epsilon_0r^3$$
 
 用场的概念去分析这个作用力，在 P 处的电荷 $q_1$ 在 R 处产生了一个“状态”，当电荷 $q_2$ 被放在 R 处，它“感受到了”作用力。这样说或许有些奇怪，在 R 处 $q_2$ 上的作用力可以被写成两个部分。 $q_2$ 乘以数值 $\boldsymbol{E}$ ，不管 $q_2$ 是否在那儿， $\boldsymbol{E}$ 总是在的（我们确保所有其他的粒子都在自己的位置上）。 $\boldsymbol{E}$ 是由 $q_1$ 产生的“状态”， $\boldsymbol{F}$ 是 $q_2$ 对 $\boldsymbol{E}$ 的响应。 $\boldsymbol{E}$ 被称之为电场，它是一个向量。在 R 处的电场的公式是电荷 $q_1$ 乘以常数 $1/4\pi\epsilon_0$ 除以 $r^2$ （r 是 P 到 R 的距离），它作用在半径向量的方向上（半径向量 r 除以它的自身长度）。 $\boldsymbol{E}$ 的表达式写作：
 
-##### eq-12-4
+### eq-12-4
 
 $$\boldsymbol{E}=q_1\boldsymbol{r}/4\pi\epsilon_0r^3$$
 
 进而
 
-##### eq-12-5
+### eq-12-5
 
 $$\boldsymbol{F}=q_2\boldsymbol{E}$$
 
@@ -44,31 +44,31 @@ $$\boldsymbol{F}=q_2\boldsymbol{E}$$
 
 首先，最为引人瞩目的事实（它可以很容易被理解）是由一些源产生的全部的电场是各个电场的向量之和，由第一个源产生的、由第二个源，等等。也就是说，如果我们有很多电荷，制造了一个场，如果其中之一制造了场 $\boldsymbol{E}_1$ ，另一个制造了场 $\boldsymbol{E}_2$ ，等等，那么我们仅需把这些向量相加就能得到全部的场。这个原理被表示为：
 
-##### eq-12-6
+### eq-12-6
 
 $$\boldsymbol{E}=\boldsymbol{E}_1+\boldsymbol{E}_2+\boldsymbol{E}_3+ \cdots$$
 
 或则
 
-##### eq-12-7
+### eq-12-7
 
 $$\boldsymbol{E}=\sum_{i}\frac{q_i\boldsymbol{r}_i}{4\pi\epsilon_0r_i^3}$$
 
 同样的方法可以应用到引力上吗？质量 $m_1$ 和 $m_2$ 之间的作用力由牛顿表示为 $\boldsymbol{F}=-Gm_1m_2\boldsymbol{r}/r^3$ 。但是根据场的概念，我们或许会说 $m_1$ 在其周围创造了一个场 $\boldsymbol{C}$ ，在 $m_2$ 上的作用力是：
 
-##### eq-12-8
+### eq-12-8
 
 $$\boldsymbol{F}=m_2\boldsymbol{C}$$
 
 完全类比带电的情况：
 
-##### eq-12-9
+### eq-12-9
 
 $$\boldsymbol{C}_i=-Gm_i\boldsymbol{r}_i/r^3$$
 
 由若干质量产生的引力场是：
 
-##### eq-12-10
+### eq-12-10
 
 $$\boldsymbol{C}=\boldsymbol{C}_1+\boldsymbol{C}_2+\boldsymbol{C}_3+\cdots$$
 
@@ -88,7 +88,7 @@ $$\boldsymbol{C}=\boldsymbol{C}_1+\boldsymbol{C}_2+\boldsymbol{C}_3+\cdots$$
 
 虽然我们现在不会给出正确的作用力定律，介于随机移动的电荷之间，一个相对于另一个，因为它太复杂了，我们会给出部分：完整的作用力定律，如果场是已知的。一个带电物体上的作用力取决于它的运动；当物体在一处静止，存在某个作用力，它与电荷成正比，其系数被我们叫做电场。当物体在移动，作用力或许会不同，准确来讲，这“片儿”新的作用力完全依赖于线性速度，但是垂直于 $\boldsymbol{v}$ 和另一个向量，我们称其为磁力感应 $\boldsymbol{B}$ 。如果电场 $\boldsymbol{E}$ 和磁场 $\boldsymbol{B}$ 的部分分别是 $(E_x,E_y,E_z)$ 、 $(B_x,B_y,B_z)$ ，如果速度 $\boldsymbol{v}$ 的部分是 $(v_x,v_y,v_z)$ ，那么在一个移动电荷上的全部的带电的作用力和磁力拥有部分：
 
-##### eq-12-11
+### eq-12-11
 
 $$F_x=q(E_x+v_yB_z-v_zB_y)$$
 
