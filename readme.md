@@ -1,5 +1,5 @@
 ## 关于 AI 的应用
-项目部署到 Github Pages[^1] 之后，我遇到了引用链接失效的问题，比如，原本仓库的一个图片链接为`/docs/assets/volume-1/fig-15-1.png`，部署之后变为`/{baseurl}/assets/volume-1/fig-15-1.png`。我重新梳理了一遍笔记整理的流程，假设一个大章节为一个单元：
+项目部署到 Github Pages[^1] 之后，我遇到了引用链接失效的问题，比如，原本仓库的一个图片链接为`/docs/assets/volume-1/fig-15-1.png`，部署之后应该变为`/{baseurl}/assets/volume-1/fig-15-1.png`。我重新梳理了一遍笔记整理的流程，假设一个大章节为一个单元：
 1. 首先把一个章节通篇阅读一遍，搞清楚它讲的内容。
 2. 然后再落笔，为了保持书写的连贯性，保持引用的原始路径。所有的引用分为三类：
    1. 图片的插入，比如，`![text](/docs/assets/volume-1/fig-15-1.png)`。
