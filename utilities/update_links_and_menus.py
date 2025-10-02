@@ -2,32 +2,138 @@
 # -*- coding: utf-8 -*-
 
 """
-Fix absolute links to Jekyll-relative Liquid URLs, generate missing chapter index.md,
-and (only when missing) generate front matter/heading. Respect existing front matter.
+update_links_and_menus.py
 
-Highlights:
-- Convert /docs/assets/... -> {{ "/assets/..." | relative_url }}
-- Convert /docs/volume-.../*.md[#anchor] -> {{ "/volume-.../*.html[#anchor]" | relative_url }}
-- Skip fenced code blocks (``` or ~~~)  
-- Existing front matter (FM): do NOT modify any keys (including title casing)  
-- Missing FM: generate minimal FM for index.md and section md  
-- For index.md body: insert H2 only if there is NO H2 at all  
-- Auto-create missing index.md under docs/volume-*/<N-chapter-slug>/ with proper FM and H2  
-- Idempotent  
+Purpose
+-------
+Automate two tasks within a restricted docs scope:
+1) Rewrite Markdown links/images to Jekyll Liquid relative URLs
+2) Ensure chapter structure: create missing index.md and minimal front matter (FM) when absent
 
-Assumptions:  
-- Docs under <repo_root>/docs (override via --docs-dir)  
-- Volume path: docs/volume-<X>/  
-- Chapter path: docs/volume-<X>/<N-<chapter-slug>>/  
-- Section file: docs/volume-<X>/<chapter-dir>/<N-M-<section-slug>>.md  
-"""  
+Scope Control (Important)
+-------------------------
+By default this script ONLY affects files under directories listed in SCOPE_DEFAULT_DIRS
+(defined below in the code, default: ['docs/volume-1']).
+
+You can override the default scope at runtime with --limit-dirs to process other volumes
+(e.g., docs/volume-2) or even a single chapter directory.
+
+Synopsis
+--------
+python utilities/update_links_and_menus.py
+       [--docs-dir DOCS_DIR]
+       [--limit-dirs DIR [DIR ...]]
+       [--paths FILE [FILE ...]]
+       [--dry-run]
+
+Options
+-------
+--docs-dir DOCS_DIR
+    Path to the docs root. Default: <repo_root>/docs.
+    The script detects volumes/chapters under this directory and also derives
+    which volumes belong to the current scope for index generation.
+
+--limit-dirs DIR [DIR ...]
+    Restrict processing to these repo-relative directories. If omitted, the default
+    scope comes from SCOPE_DEFAULT_DIRS at the top of this file.
+    - Accepts multiple directories.
+    - Typical values:
+        - docs/volume-1
+        - docs/volume-1/15-the-special-theory-of-relativity
+        - docs/volume-1 docs/volume-2
+    - Any file not under these directories will be ignored, even if passed via --paths.
+
+--paths FILE [FILE ...]
+    Only process specific Markdown files. Paths can be absolute or repo-relative.
+    Files are still filtered by the active scope (SCOPE_DEFAULT_DIRS or --limit-dirs).
+    If omitted, the script recursively scans all .md files within the active scope.
+
+--dry-run
+    Preview changes without writing to disk. Prints which files would change
+    (prefixed with [CHANGE]) and which index.md would be created
+    (prefixed with [CREATE]). No files are modified.
+
+What the script does
+--------------------
+Link rewriting (idempotent, skips fenced code blocks):
+- /docs/assets/...     -> {{ "/assets/..." | relative_url }}
+- /assets/...          -> {{ "/assets/..." | relative_url }}  (normalize to Liquid)
+- /docs/volume-.../*.md[#a]
+    -> {{ "/volume-.../*.html[#a]" | relative_url }}
+
+Front matter and headings:
+- Existing FM is preserved (no key/value changes).
+- If FM is missing:
+    - For chapter index.md: generate FM
+        layout: default
+        title: "<N>. <Chapter Title>"
+        parent: "Volume <V>"
+        nav_order: <N>
+        has_children: true
+      and insert an H2 heading "## <N>. <Chapter Title>" if none exists.
+    - For section files like N-M-slug.md: generate minimal FM
+        layout: default
+        title: "<N>-<M> <Section Title>"
+        parent: "<N>. <Chapter Title>"
+        nav_order: <M>
+- For index.md with existing FM: insert a single H2 at top only if the body
+  has no H2 at all (keeps content otherwise).
+
+Auto-creation of chapter index.md:
+- For any chapter directory within the scoped volumes missing index.md,
+  the script creates it with proper FM and H2 (unless --dry-run).
+
+Assumptions
+-----------
+- Docs live under DOCS_DIR (default <repo_root>/docs).
+- Volumes: docs/volume-<number>/
+- Chapters: docs/volume-<number>/<N-chapter-slug>/
+- Sections: docs/volume-<number>/<N-M-section-slug>.md
+- UTF-8 files.
+
+Exit Codes
+----------
+0 on success, non-zero on fatal errors (e.g., docs dir not found).
+
+Examples
+--------
+# Use defaults (scope from SCOPE_DEFAULT_DIRS, typically docs/volume-1)
+python utilities/update_links_and_menus.py
+
+# Limit to Volume 1 explicitly
+python utilities/update_links_and_menus.py --limit-dirs docs/volume-1
+
+# Process two volumes
+python utilities/update_links_and_menus.py --limit-dirs docs/volume-1 docs/volume-2
+
+# Only a single chapter
+python utilities/update_links_and_menus.py --limit-dirs docs/volume-1/15-the-special-theory-of-relativity
+
+# Only specific files (still restricted by scope)
+python utilities/update_links_and_menus.py --limit-dirs docs/volume-1 --paths docs/volume-1/15-*/15-1-*.md
+
+# Preview without modifying files
+python utilities/update_links_and_menus.py --limit-dirs docs/volume-1 --dry-run
+
+Integration Notes
+-----------------
+- The provided pre-commit hook calls this script with --limit-dirs to ensure
+  only files inside the configured docs scope are affected.
+- The script itself enforces the same scope for double safety.
+"""
 
 from pathlib import Path  
 import argparse  
 import re  
 import sys  
 import os  
-from typing import Tuple, Optional, List  
+from typing import Tuple, Optional, List, Iterable  
+
+# ========= SCOPE CONFIG (edit here if needed) =========  
+# White-list of repo-relative directories to process.  
+# Default: restrict to Volume 1 only.  
+SCOPE_DEFAULT_DIRS = ["docs/volume-1"]  
+# ======================================================  
 
 # ---------- Fence (code block) detection ----------  
 FENCE_PATTERN = re.compile(r'^\s*(?:`{3,}|~{3,})')  
@@ -41,9 +147,6 @@ def split_lines_keepends(text: str) -> List[str]:
 LINK_PATTERN = re.compile(r'(!?)\[(.*?)\]\(([^)\r\n]+?)\)')  
 
 def _split_dest_and_title(dest: str) -> Tuple[str, Optional[str]]:  
-    """  
-    Split '(url [title])' into url and optional title (keep original title formatting).  
-    """  
     s = dest.strip()  
     if s.startswith('<') and s.endswith('>'):  
         s = s[1:-1].strip()  
@@ -216,10 +319,6 @@ SMALL_WORDS = {
 }  
 
 def smart_title_from_slug(slug: str) -> str:  
-    """  
-    'the-special-theory-of-relativity' -> 'The Special Theory of Relativity'  
-    Keeps small words in lowercase unless they are the first token.  
-    """  
     parts = [w for w in re.split(r'[-_ ]+', slug) if w]  
     words = []  
     for idx, w in enumerate(parts):  
@@ -238,15 +337,12 @@ def body_has_any_h2(body: str) -> bool:
     return bool(H2_PATTERN.search(body))  
 
 def ensure_h2_if_absent(body: str, title: str) -> Tuple[str, bool]:  
-    """  
-    Insert '## <title>' at the top only if there is NO H2 at all in body.  
-    """  
     if body_has_any_h2(body):  
         return body, False  
     insertion = f'## {title}\n\n'  
     return insertion + body.lstrip(), True  
 
-# ---------- Path detection ----------  
+# ---------- Path and scope helpers ----------  
 
 def detect_volume_chapter(path: Path, docs_dir: Path) -> Optional[Tuple[int, int, str]]:  
     """  
@@ -277,9 +373,6 @@ def detect_volume_chapter(path: Path, docs_dir: Path) -> Optional[Tuple[int, int
     return volume_num, chapter_num, chapter_title  
 
 def detect_section_numbers(filename: str) -> Optional[Tuple[int, int, str]]:  
-    """  
-    15-1-the-principle-of-relativity.md -> (15, 1, 'The Principle of Relativity')  
-    """  
     m = re.match(r'(\d+)-(\d+)-(.+)\.md', filename)  
     if not m:  
         return None  
@@ -288,18 +381,64 @@ def detect_section_numbers(filename: str) -> Optional[Tuple[int, int, str]]:
     section_title = smart_title_from_slug(m.group(3))  
     return chapter_num, section_num, section_title  
 
-# ---------- Ensure missing index.md ----------  
+# ---------- Scope computation ----------  
 
-def chapter_dirs(docs_dir: Path, only_volume: Optional[str]) -> List[Tuple[int, str, Path]]:  
+def norm_abs_paths(repo_root: Path, paths: Iterable[str]) -> List[Path]:  
+    out = []  
+    for p in paths:  
+        pp = Path(p)  
+        if not pp.is_absolute():  
+            pp = (repo_root / pp).resolve()  
+        else:  
+            pp = pp.resolve()  
+        out.append(pp)  
+    return out  
+
+def path_in_any_scope(p: Path, scope_dirs_abs: List[Path]) -> bool:  
+    p = p.resolve()  
+    for base in scope_dirs_abs:  
+        base = base.resolve()  
+        # allow exact dir or any descendant  
+        try:  
+            p.relative_to(base)  
+            return True  
+        except Exception:  
+            continue  
+    return False  
+
+def derive_volume_whitelist(docs_dir: Path, scope_dirs_abs: List[Path]) -> Optional[List[str]]:  
+    """  
+    From scoped dirs, extract which 'volume-*' under docs are allowed.  
+    If none of the scope dirs is under docs, return None (means no volume restriction).  
+    """  
+    vols = set()  
+    for sd in scope_dirs_abs:  
+        try:  
+            rel = sd.resolve().relative_to(docs_dir.resolve())  
+        except Exception:  
+            continue  
+        parts = rel.parts  
+        if not parts:  
+            continue  
+        first = parts[0]  
+        if re.match(r'volume-\d+', first):  
+            vols.add(first)  
+    return sorted(vols) if vols else None  
+
+# ---------- Ensure missing index.md within scope ----------  
+
+def chapter_dirs(docs_dir: Path, volume_whitelist: Optional[List[str]]) -> List[Tuple[int, str, Path]]:  
     """  
     Return list of (volume_num, volume_dirname, chapter_dir_path)  
+    honoring the volume_whitelist if provided.  
     """  
-    volumes = []  
     base = docs_dir.resolve()  
-    if only_volume:  
-        vol_path = (base / only_volume).resolve()  
-        if vol_path.is_dir():  
-            volumes.append(vol_path)  
+    volumes = []  
+    if volume_whitelist:  
+        for vname in volume_whitelist:  
+            vp = (base / vname)  
+            if vp.is_dir():  
+                volumes.append(vp.resolve())  
     else:  
         volumes = [p.resolve() for p in base.glob('volume-*') if p.is_dir()]  
 
@@ -314,14 +453,10 @@ def chapter_dirs(docs_dir: Path, only_volume: Optional[str]) -> List[Tuple[int, 
                 result.append((vnum, vol.name, ch.resolve()))  
     return result  
 
-def ensure_missing_indexes(docs_dir: Path, only_volume: Optional[str], dry_run: bool=False) -> List[Path]:  
-    """  
-    Create index.md for any chapter dir missing it.  
-    Returns list of created file paths.  
-    """  
+def ensure_missing_indexes(docs_dir: Path, volume_whitelist: Optional[List[str]], dry_run: bool=False) -> List[Path]:  
     created = []  
     base = docs_dir.resolve()  
-    for vnum, vname, ch_dir in chapter_dirs(base, only_volume):  
+    for vnum, vname, ch_dir in chapter_dirs(base, volume_whitelist):  
         m = re.match(r'(\d+)-(.+)', ch_dir.name)  
         if not m:  
             continue  
@@ -346,10 +481,6 @@ def ensure_missing_indexes(docs_dir: Path, only_volume: Optional[str], dry_run: 
 # ---------- File processing ----------  
 
 def rewrite_body_with_h2_if_needed(full_content: str, body: str, title: str) -> Tuple[str, bool]:  
-    """  
-    Replace only the body part by inserting H2 if there is NO H2 at all.  
-    We compute the prefix length as len(full_content) - len(body).  
-    """  
     new_body, changed = ensure_h2_if_absent(body, title)  
     if not changed:  
         return full_content, False  
@@ -357,10 +488,6 @@ def rewrite_body_with_h2_if_needed(full_content: str, body: str, title: str) -> 
     return full_content[:prefix_len] + new_body, True  
 
 def process_file(path: Path, docs_dir: Path) -> Tuple[bool, str]:  
-    """  
-    Process links and (only when FM missing) front matter/heading for a single .md file.  
-    Returns (changed, new_content)  
-    """  
     p = path.resolve()  
     try:  
         original = p.read_text(encoding='utf-8')  
@@ -379,14 +506,12 @@ def process_file(path: Path, docs_dir: Path) -> Tuple[bool, str]:
         data, body, fm_text = parse_front_matter(content)  
 
         if fm_text:  
-            # FM exists: do NOT modify FM; for index.md only, ensure a H2 exists  
             if p.name == 'index.md':  
                 fm_title = str(data.get('title', f'{chapter_num}. {chapter_title_from_path}'))  
                 content, ch = rewrite_body_with_h2_if_needed(content, body, fm_title)  
                 if ch:  
                     changed_fm_or_heading = True  
         else:  
-            # No FM: generate minimal FM  
             if p.name == 'index.md':  
                 new_data = {  
                     'layout': 'default',  
@@ -418,52 +543,67 @@ def process_file(path: Path, docs_dir: Path) -> Tuple[bool, str]:
 
 # ---------- Utilities ----------  
 
-def iter_target_files(docs_dir: Path, volume: Optional[str], only_files: Optional[List[Path]]) -> List[Path]:  
+def iter_target_files(docs_dir: Path,  
+                      scope_dirs_abs: List[Path],  
+                      only_files: Optional[List[Path]]) -> List[Path]:  
     """  
-    Return a list of absolute Path objects for md files to process.  
+    Return a list of absolute Path objects for md files to process,  
+    filtered by scope_dirs_abs.  
     """  
-    base = docs_dir.resolve()  
+    def in_scope(p: Path) -> bool:  
+        return path_in_any_scope(p, scope_dirs_abs)  
+
     if only_files:  
         out = []  
-        for f in only_files:  
-            p = Path(f)  
-            p = p.resolve() if p.is_absolute() else (Path.cwd() / p).resolve()  
-            if str(p).endswith('.md') and p.exists() and p.is_file():  
+        for p in only_files:  
+            p = p.resolve()  
+            if p.suffix.lower() == '.md' and p.exists() and p.is_file() and in_scope(p):  
                 out.append(p)  
         return out  
-    if volume:  
-        base = (base / volume).resolve()  
-    return sorted([p.resolve() for p in base.rglob('*.md') if p.is_file()])  
+
+    # No explicit files: scan within each scope directory  
+    result = []  
+    for base in scope_dirs_abs:  
+        base = base.resolve()  
+        if base.is_file():  
+            if base.suffix.lower() == '.md':  
+                result.append(base)  
+            continue  
+        if base.is_dir():  
+            result.extend(sorted([p.resolve() for p in base.rglob('*.md') if p.is_file()]))  
+    return sorted(set(result))  
 
 def pretty_rel(p: Path, root: Path) -> str:  
-    """  
-    Robust relative path printer: always return path relative to root using os.path.relpath.  
-    Works even if p is not a strict subpath of root per pathlib's relative_to.  
-    """  
     try:  
         return os.path.relpath(str(p.resolve()), start=str(root.resolve()))  
     except Exception:  
-        # Fallback to string if something odd happens  
         return str(p)  
 
 # ---------- CLI main ----------  
 
 def main():  
-    ap = argparse.ArgumentParser(description="Fix links, generate missing index.md, and (when missing) FM/heading.")  
+    ap = argparse.ArgumentParser(description="Fix links, generate missing index.md, and (when missing) FM/heading within a restricted scope.")  
     ap.add_argument("--docs-dir", default=None, help="Path to docs dir (default: <repo_root>/docs)")  
-    ap.add_argument("--volume", default=None, help="Limit to specific volume directory, e.g., volume-1")  
     ap.add_argument("--dry-run", action="store_true", help="Preview changes without writing files")  
     ap.add_argument("--paths", nargs='*', help="Only process specific files (space-separated list)")  
+    ap.add_argument("--limit-dirs", nargs='*', default=None,  
+                    help="Restrict processing to these repo-relative directories (default: from script header SCOPE_DEFAULT_DIRS). Examples: docs/volume-1 docs/volume-2")  
     args = ap.parse_args()  
 
-    # Resolve repo_root and docs_dir to absolute paths  
     repo_root = Path(__file__).resolve().parents[1]  
     docs_dir = Path(args.docs_dir).resolve() if args.docs_dir else (repo_root / "docs").resolve()  
     if not docs_dir.exists():  
         print(f"[ERROR] docs dir not found: {docs_dir}", file=sys.stderr)  
         sys.exit(1)  
 
-    # Normalize only_files to absolute paths (relative to repo_root if needed)  
+    # Resolve scope dirs  
+    scope_dirs_cfg = args.limit_dirs if args.limit_dirs is not None else SCOPE_DEFAULT_DIRS  
+    if not scope_dirs_cfg:  
+        # Fallback to docs itself if someone empties the config accidentally  
+        scope_dirs_cfg = [str(docs_dir.relative_to(repo_root))]  
+    scope_dirs_abs = norm_abs_paths(repo_root, scope_dirs_cfg)  
+
+    # Normalize only_files to absolute paths  
     only_files_abs: Optional[List[Path]] = None  
     if args.paths:  
         only_files_abs = []  
@@ -475,13 +615,14 @@ def main():
                 p = p.resolve()  
             only_files_abs.append(p)  
 
-    # 0) Ensure missing index.md first  
-    created_indexes = ensure_missing_indexes(docs_dir, args.volume, dry_run=args.dry_run)  
+    # 0) Ensure missing index.md first, but only in scoped volumes  
+    volume_whitelist = derive_volume_whitelist(docs_dir, scope_dirs_abs)  
+    created_indexes = ensure_missing_indexes(docs_dir, volume_whitelist, dry_run=args.dry_run)  
 
-    # 1) Process files (links + missing FM)  
-    files = iter_target_files(docs_dir, args.volume, only_files_abs)  
+    # 1) Process files (links + missing FM) within scope  
+    files = iter_target_files(docs_dir, scope_dirs_abs, only_files_abs)  
     if not files and not created_indexes:  
-        print("[INFO] No markdown files to process.")  
+        print("[INFO] No markdown files to process within scope.")  
         return  
 
     changed_count = 0  
@@ -506,3 +647,4 @@ def main():
 
 if __name__ == "__main__":  
     main()
+    
