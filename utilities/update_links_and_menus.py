@@ -2,24 +2,125 @@
 # -*- coding: utf-8 -*-
 
 """
-Fix absolute links to Jekyll-relative Liquid URLs, generate missing chapter index.md,
-and (only when missing) generate front matter/heading. Respect existing front matter.
+update_links_and_menus.py
 
-Scope control:
-- By default, only process repo-relative paths in SCOPE_DEFAULT_DIRS (e.g., ['docs/volume-1'])
-- You can override via CLI: --limit-dirs docs/volume-1 docs/volume-2
-- Any files outside the scope will be ignored (even if explicitly passed via --paths)
+Purpose
+-------
+Automate two tasks within a restricted docs scope:
+1) Rewrite Markdown links/images to Jekyll Liquid relative URLs
+2) Ensure chapter structure: create missing index.md and minimal front matter (FM) when absent
 
-Highlights:
-- Convert /docs/assets/... -> {{ "/assets/..." | relative_url }}
-- Convert /docs/volume-.../*.md[#anchor] -> {{ "/volume-.../*.html[#anchor]" | relative_url }}
-- Skip fenced code blocks (``` or ~~~)  
-- Existing front matter (FM): do NOT modify any keys (including title casing)  
-- Missing FM: generate minimal FM for index.md and section md  
-- For index.md body: insert H2 only if there is NO H2 at all  
-- Auto-create missing index.md under scoped docs/volume-*/<N-chapter-slug>/ with proper FM and H2  
-- Idempotent  
-"""  
+Scope Control (Important)
+-------------------------
+By default this script ONLY affects files under directories listed in SCOPE_DEFAULT_DIRS
+(defined below in the code, default: ['docs/volume-1']).
+
+You can override the default scope at runtime with --limit-dirs to process other volumes
+(e.g., docs/volume-2) or even a single chapter directory.
+
+Synopsis
+--------
+python utilities/update_links_and_menus.py
+       [--docs-dir DOCS_DIR]
+       [--limit-dirs DIR [DIR ...]]
+       [--paths FILE [FILE ...]]
+       [--dry-run]
+
+Options
+-------
+--docs-dir DOCS_DIR
+    Path to the docs root. Default: <repo_root>/docs.
+    The script detects volumes/chapters under this directory and also derives
+    which volumes belong to the current scope for index generation.
+
+--limit-dirs DIR [DIR ...]
+    Restrict processing to these repo-relative directories. If omitted, the default
+    scope comes from SCOPE_DEFAULT_DIRS at the top of this file.
+    - Accepts multiple directories.
+    - Typical values:
+        - docs/volume-1
+        - docs/volume-1/15-the-special-theory-of-relativity
+        - docs/volume-1 docs/volume-2
+    - Any file not under these directories will be ignored, even if passed via --paths.
+
+--paths FILE [FILE ...]
+    Only process specific Markdown files. Paths can be absolute or repo-relative.
+    Files are still filtered by the active scope (SCOPE_DEFAULT_DIRS or --limit-dirs).
+    If omitted, the script recursively scans all .md files within the active scope.
+
+--dry-run
+    Preview changes without writing to disk. Prints which files would change
+    (prefixed with [CHANGE]) and which index.md would be created
+    (prefixed with [CREATE]). No files are modified.
+
+What the script does
+--------------------
+Link rewriting (idempotent, skips fenced code blocks):
+- /docs/assets/...     -> {{ "/assets/..." | relative_url }}
+- /assets/...          -> {{ "/assets/..." | relative_url }}  (normalize to Liquid)
+- /docs/volume-.../*.md[#a]
+    -> {{ "/volume-.../*.html[#a]" | relative_url }}
+
+Front matter and headings:
+- Existing FM is preserved (no key/value changes).
+- If FM is missing:
+    - For chapter index.md: generate FM
+        layout: default
+        title: "<N>. <Chapter Title>"
+        parent: "Volume <V>"
+        nav_order: <N>
+        has_children: true
+      and insert an H2 heading "## <N>. <Chapter Title>" if none exists.
+    - For section files like N-M-slug.md: generate minimal FM
+        layout: default
+        title: "<N>-<M> <Section Title>"
+        parent: "<N>. <Chapter Title>"
+        nav_order: <M>
+- For index.md with existing FM: insert a single H2 at top only if the body
+  has no H2 at all (keeps content otherwise).
+
+Auto-creation of chapter index.md:
+- For any chapter directory within the scoped volumes missing index.md,
+  the script creates it with proper FM and H2 (unless --dry-run).
+
+Assumptions
+-----------
+- Docs live under DOCS_DIR (default <repo_root>/docs).
+- Volumes: docs/volume-<number>/
+- Chapters: docs/volume-<number>/<N-chapter-slug>/
+- Sections: docs/volume-<number>/<N-M-section-slug>.md
+- UTF-8 files.
+
+Exit Codes
+----------
+0 on success, non-zero on fatal errors (e.g., docs dir not found).
+
+Examples
+--------
+# Use defaults (scope from SCOPE_DEFAULT_DIRS, typically docs/volume-1)
+python utilities/update_links_and_menus.py
+
+# Limit to Volume 1 explicitly
+python utilities/update_links_and_menus.py --limit-dirs docs/volume-1
+
+# Process two volumes
+python utilities/update_links_and_menus.py --limit-dirs docs/volume-1 docs/volume-2
+
+# Only a single chapter
+python utilities/update_links_and_menus.py --limit-dirs docs/volume-1/15-the-special-theory-of-relativity
+
+# Only specific files (still restricted by scope)
+python utilities/update_links_and_menus.py --limit-dirs docs/volume-1 --paths docs/volume-1/15-*/15-1-*.md
+
+# Preview without modifying files
+python utilities/update_links_and_menus.py --limit-dirs docs/volume-1 --dry-run
+
+Integration Notes
+-----------------
+- The provided pre-commit hook calls this script with --limit-dirs to ensure
+  only files inside the configured docs scope are affected.
+- The script itself enforces the same scope for double safety.
+"""
 
 from pathlib import Path  
 import argparse  
